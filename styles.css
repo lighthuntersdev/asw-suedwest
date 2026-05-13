@@ -806,6 +806,14 @@ section { padding: 100px 5%; }
   color: var(--text-muted);
   font-size: 0.8rem;
   gap: 8px;
+  overflow: hidden;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .team-photo svg { width: 48px; height: 48px; opacity: 0.3; }
