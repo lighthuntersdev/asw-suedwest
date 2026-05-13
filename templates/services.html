@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finanzierungen für Wohnungsunternehmen | ASW südwest</title>
-  <meta name="description" content="Finanzierungslösungen für die Wohnungswirtschaft: Neubaufinanzierung, Modernisierung, Kapitalanlagestrategie. In Zusammenarbeit mit NT ImmoConsult GmbH.">
-  <meta name="keywords" content="Finanzierung Wohnungswirtschaft, Neubaufinanzierung, Modernisierungsfinanzierung, Kapitalanlage, NT ImmoConsult, ASW s&uuml;dwest">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <meta name="keywords" content="Sachverst&auml;ndige, Brandschutz, Risikomanagement, Fachanw&auml;lte, Kundenportal, Wohnungswirtschaft, ASW s&uuml;dwest">
   <meta name="author" content="ASW s&uuml;dwest GmbH">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1a2b3c">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Finanzierungen für Wohnungsunternehmen | ASW südwest">
-  <meta property="og:description" content="Finanzierungslösungen für die Wohnungswirtschaft: Neubau, Modernisierung, Kapitalanlage. In Zusammenarbeit mit NT ImmoConsult GmbH.">
+  <meta property="og:title" content="{{meta.og_title}}">
+  <meta property="og:description" content="{{meta.og_description}}">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.asw-suedwest.de/finanzierungen.html">
+  <meta property="og:url" content="https://www.asw-suedwest.de/services.html">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="ASW s&uuml;dwest">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Finanzierungen für Wohnungsunternehmen | ASW südwest">
-  <meta name="twitter:description" content="Finanzierungslösungen für die Wohnungswirtschaft: Neubau, Modernisierung, Kapitalanlage. In Zusammenarbeit mit NT ImmoConsult GmbH.">
+  <meta name="twitter:title" content="{{meta.og_title}}">
+  <meta name="twitter:description" content="{{meta.og_description}}">
 
-  <link rel="canonical" href="https://www.asw-suedwest.de/finanzierungen.html">
+  <link rel="canonical" href="https://www.asw-suedwest.de/services.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
@@ -34,9 +34,9 @@
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Finanzierungen für Wohnungsunternehmen",
-    "description": "Finanzierungslösungen für die Wohnungswirtschaft: Neubaufinanzierung, Modernisierung, Kapitalanlagestrategie.",
-    "url": "https://www.asw-suedwest.de/finanzierungen.html",
+    "name": "Services & Netzwerk",
+    "description": "Zusätzliche Services von ASW südwest: Sachverständige, Brandschutzberatung, technisches Risikomanagement, Fachanwälte und digitales Kundenportal.",
+    "url": "https://www.asw-suedwest.de/services.html",
     "isPartOf": {
       "@type": "WebSite",
       "name": "ASW südwest",
@@ -70,8 +70,8 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Finanzierungen",
-        "item": "https://www.asw-suedwest.de/finanzierungen.html"
+        "name": "Services & Netzwerk",
+        "item": "https://www.asw-suedwest.de/services.html"
       }
     ]
   }
@@ -116,119 +116,110 @@
           <span>&rsaquo;</span>
           <a href="versicherungen.html" style="color: var(--text-muted); text-decoration: none;">Leistungen</a>
           <span>&rsaquo;</span>
-          <span style="color: var(--text-secondary);">Finanzierungen</span>
+          <span style="color: var(--text-secondary);">Services &amp; Netzwerk</span>
         </div>
-        <span class="hero-badge">Finanzierung &amp; Kapitalanlage</span>
-        <h1>Invest in die Zukunft</h1>
-        <p class="hero-subtitle">Professionelles Finanzmanagement gehört zu den wichtigen Erfolgsfaktoren in der Wohnungswirtschaft und sollte deshalb zusammen mit Experten umgesetzt werden.</p>
+        <span class="hero-badge">{{hero.badge}}</span>
+        <h1>{{hero.title}}</h1>
+        <p class="hero-subtitle">{{hero.subtitle}}</p>
         <div class="hero-actions">
-          <a href="#neubau" class="btn-primary">Finanzierungslösungen</a>
-          <a href="index.html#kontakt" class="btn-outline">Beratung anfragen</a>
+          <a href="{{hero.cta_primary.link}}" class="btn-primary">{{hero.cta_primary.text}}</a>
+          <a href="{{hero.cta_secondary.link}}" class="btn-outline">{{hero.cta_secondary.text}}</a>
         </div>
       </div>
       <div class="hero-visual">
-        <img src="images/wohnanlage.jpg" alt="Moderne Wohnanlage – Finanzierungslösungen für die Wohnungswirtschaft" loading="eager" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
+        <img src="images/hero-building.jpg" alt="Services und Netzwerk für die Wohnungswirtschaft" loading="eager" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
       </div>
     </div>
   </header>
 
-  <!-- ===== NT IMMOCONSULT ===== -->
-  <section class="why-asw" id="neubau">
+  <!-- ===== DECKUNGSANALYSE ===== -->
+  <section class="why-asw" id="deckungsanalyse">
     <div class="container">
       <div class="why-asw-grid">
         <div class="why-asw-content reveal">
-          <span class="section-tag">NT ImmoConsult</span>
-          <h2>Eine solide Finanzierung als Basis</h2>
-          <p>Unser Schwesterunternehmen, die NT ImmoConsult, verfügt über langjährige Erfahrungen und weitreichende Branchenkenntnisse. Ihre Experten sind den vitalen Interessen unserer Kunden verpflichtet. Als ungebundener Dienstleister der Wohnungswirtschaft kann die NT ImmoConsult auf das gesamte Angebotsspektrum zugreifen und Ihr Finanzportfolio nachhaltig optimieren. In zentraler Funktion zwischen Wohnungsunternehmen und den verschiedenen Finanzinstituten sorgen wir zudem dafür, Ihren Aufwand im Finanzmanagement deutlich zu reduzieren.</p>
+          <span class="section-tag">{{deckungsanalyse.tag}}</span>
+          <h2>{{deckungsanalyse.title}}</h2>
+          <p>{{deckungsanalyse.text_1}}</p>
+          <p>{{deckungsanalyse.text_2}}</p>
+          <p>{{deckungsanalyse.text_3}}</p>
+          <div style="margin-top: 24px;">
+            <a href="mailto:info@asw-suedwest.de" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              E-Mail
+            </a>
+          </div>
         </div>
         <div class="why-asw-visual reveal">
-          <img src="images/hero-building.jpg" alt="NT ImmoConsult – Finanzierung für die Wohnungswirtschaft" loading="lazy" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
+          <img src="images/wohnanlage.jpg" alt="Deckungsanalyse für die Wohnungswirtschaft" loading="lazy" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NETZWERKPARTNER ===== -->
+  <section style="background: var(--gray-50);" id="netzwerkpartner">
+    <div class="container">
+      <div class="why-asw-grid">
+        <div class="why-asw-visual reveal">
+          <img src="images/hero-building.jpg" alt="Netzwerkpartner für die Wohnungswirtschaft" loading="lazy" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
+        </div>
+        <div class="why-asw-content reveal">
+          <span class="section-tag">{{netzwerkpartner.tag}}</span>
+          <h2>{{netzwerkpartner.title}}</h2>
+          <p>{{netzwerkpartner.text}}</p>
+          <div style="margin-top: 24px;">
+            <a href="mailto:info@asw-suedwest.de" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              E-Mail
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===== DIENSTLEISTUNGEN ===== -->
-  <section style="background: var(--gray-50);" id="dienstleistungen">
+  <section id="dienstleistungen">
     <div class="container">
-      <div class="services-grid">
-
-        
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <div class="why-asw-grid">
+        <div class="why-asw-content reveal">
+          <span class="section-tag">{{dienstleistungen.tag}}</span>
+          <h2>{{dienstleistungen.title}}</h2>
+          <p>{{dienstleistungen.text}}</p>
+          <div style="margin-top: 24px;">
+            <a href="mailto:info@asw-suedwest.de" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              E-Mail
+            </a>
           </div>
-          <h3>Darlehensprodukte</h3>
-          <p>Vermittlung verschiedener Darlehensprodukte: Kapitalmarktmittel, KfW-Darlehen, Modernisierungs- und Instandhaltungsdarlehen, kurzfristige Kredite und Unternehmensfinanzierungen.</p>
         </div>
-        
-
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3>Umschuldungen &amp; Forward</h3>
-          <p>Durchführung von Umschuldungen und Forward-Darlehen.</p>
+        <div class="why-asw-visual reveal">
+          <img src="images/team-meeting.jpg" alt="Dienstleistungen für die Wohnungswirtschaft" loading="lazy" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
         </div>
-        
-
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3>Portfolio-Analyse</h3>
-          <p>Ermittlung von Beleihungswerten, Mobilisierung von Finanzierungsreserven, Analyse von Darlehensportfolios und Zinsrisiken.</p>
-        </div>
-        
-
-        <div class="service-card reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          </div>
-          <h3>Festgeldanlagen</h3>
-          <p>Vermittlung von Festgeldanlagen. Die richtige Finanzierungsentscheidung ist maßgeblich für die Wirtschaftlichkeit Ihrer Maßnahmen.</p>
-        </div>
-        
-
-      </div>
-      <div style="text-align: center; margin-top: 40px;" class="reveal">
-        <a href="#" class="btn-primary">Hier geht's zur NT ImmoConsult</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== ZAHLEN ===== -->
-  <section class="trust-bar" id="zahlen">
+  <!-- ===== NATURGEFAHREN ===== -->
+  <section style="background: var(--gray-50);" id="naturgefahren">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Finanzierungskompetenz</span>
-        <h2>Zahlen, die für sich sprechen</h2>
-      </div>
-      <div class="trust-bar-grid">
-        
-        <div class="trust-item reveal">
-          <span class="trust-number">500+</span>
-          <span class="trust-label">Finanzierungsprojekte begleitet</span>
+      <div class="why-asw-grid">
+        <div class="why-asw-visual reveal">
+          <img src="images/wohnanlage.jpg" alt="Naturgefahrenanalyse für die Wohnungswirtschaft" loading="lazy" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
         </div>
-        
-
-        <div class="trust-item reveal">
-          <span class="trust-number">2 Mrd.+</span>
-          <span class="trust-label">Euro Finanzierungsvolumen</span>
+        <div class="why-asw-content reveal">
+          <span class="section-tag">{{naturgefahren.tag}}</span>
+          <h2>{{naturgefahren.title}}</h2>
+          <p>{{naturgefahren.text_1}}</p>
+          <p>{{naturgefahren.text_2}}</p>
+          <p>{{naturgefahren.text_3}}</p>
+          <div style="margin-top: 24px;">
+            <a href="mailto:info@asw-suedwest.de" class="btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              E-Mail
+            </a>
+          </div>
         </div>
-        
-
-        <div class="trust-item reveal">
-          <span class="trust-number">30+</span>
-          <span class="trust-label">Bankpartner im Netzwerk</span>
-        </div>
-        
-
-        <div class="trust-item reveal">
-          <span class="trust-number">100%</span>
-          <span class="trust-label">Bankenunabhängig</span>
-        </div>
-        
       </div>
     </div>
   </section>
@@ -237,15 +228,15 @@
   <section class="cta-section" id="kontakt">
     <div class="container">
       <div class="cta-content reveal">
-        <h2>Finanzierung neu denken</h2>
-        <p>Lassen Sie Ihre bestehende Finanzierungsstruktur prüfen oder besprechen Sie Ihr nächstes Bauprojekt mit uns -- kostenfrei und unverbindlich.</p>
+        <h2>{{cta.title}}</h2>
+        <p>{{cta.text}}</p>
         <div class="cta-actions">
-          <a href="mailto:info@asw-suedwest.de" class="btn-white">
+          <a href="{{cta.cta_link}}" class="btn-white">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-            Beratung anfragen
+            {{cta.cta_text}}
           </a>
         </div>
-        <p class="cta-note">Kostenlos &amp; unverbindlich.</p>
+        <p class="cta-note">{{cta.note}}</p>
       </div>
     </div>
   </section>
