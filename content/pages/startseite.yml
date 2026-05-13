@@ -1,0 +1,210 @@
+# =============================================================================
+# Startseite (index.html)
+# =============================================================================
+# Alle editierbaren Textfelder der Startseite.
+# Keine HTML-Tags -- nur reiner Text und Markdown fuer Fliesstext.
+# =============================================================================
+
+meta:
+  title: "ASW südwest -- Versicherungsmakler für die Wohnungswirtschaft"
+  description: "ASW südwest -- Ihr spezialisierter Versicherungsmakler für die Wohnungswirtschaft. Maßgeschneiderte Versicherungslösungen für Wohnungsunternehmen, Genossenschaften und Hausverwaltungen."
+  og_title: "ASW südwest -- Versicherungsmakler für die Wohnungswirtschaft"
+  og_description: "Spezialisierte Versicherungslösungen für Wohnungsunternehmen, Genossenschaften und Hausverwaltungen. Über 25 Jahre Branchenerfahrung."
+
+hero:
+  badge: "Seit 1999 Partner der Wohnungswirtschaft"
+  title: "Wohnungswirtschaft ist unsere Leidenschaft"
+  subtitle: "Sicherheit für die Wohnungswirtschaft -- maßgeschneidert und partnerschaftlich. Als spezialisierter Versicherungsmakler bieten wir Ihnen individuelle Versicherungslösungen, die exakt auf ihre Bedürfnisse zugeschnitten sind."
+  cta_primary:
+    text: "Kostenlose Risikoanalyse"
+    link: "#kontakt"
+  cta_secondary:
+    text: "Leistungen entdecken"
+    link: "#leistungen"
+
+trust_bar:
+  items:
+    - number: "> 25 Jahre"
+      label: "Seit 1999 vertrauensvoller Partner der Wohnungswirtschaft"
+    - number: "> 3.000"
+      label: "Mitglieder im GdW"
+    - number: "> 50 Jahre"
+      label: "Erfahrung"
+    - number: "> 70"
+      label: "Netzwerkpartner"
+
+leistungen:
+  tag: "Unsere Leistungen"
+  title: "Maßgeschneiderte Versicherungskonzepte für die Wohnungswirtschaft"
+  subtitle: "Als spezialisierter Versicherungsmakler kennen wir die Herausforderungen der Wohnungswirtschaft -- von Haftungsrisiken über Gebäudeschäden bis hin zur Absicherung von Großportfolios."
+  cards:
+    - title: "Versicherungen"
+      text: "Sicherheit für Ihr Immobilienportfolio -- Versicherung mit System. Ein bedarfsgerechter Versicherungsschutz ist für Unternehmen der Wohnungswirtschaft ein entscheidender Faktor."
+      link: "versicherungen.html"
+    - title: "Finanzierungen"
+      text: "Eine solide Finanzierung als Basis. Ob Neubau, Modernisierung oder Immobilienkauf -- eine klug strukturierte Finanzierung bildet die Basis für wirtschaftlich erfolgreiche Entscheidungen."
+      link: "finanzierungen.html"
+    - title: "Services"
+      text: "Wir haben den richtigen Partner für Sie. Ob Bau-Sachverständige, Brandschutzberater, Beratung vor der Installation von Branddetektoren, Sprinklersystemen, oder Einbruchmeldeanlagen."
+      link: "services.html"
+
+schadenbearbeitung:
+  tag: "Schadenbearbeitung"
+  title: "Digital und trotzdem persönlich: Schadenbearbeitung schnell und zeitgemäß"
+  text: "Wir, bei der ASW südwest, verstehen unsere Kunden, die sich insbesondere im Bereich der Schadenabwicklung eine kompetente Beratung sowie eine schnelle Abwicklung des Schadens wünschen."
+  points:
+    - "24/7 digitale Schadenmeldung"
+    - "Direkter Support: Unser Team ist für Sie telefonisch erreichbar"
+    - "Schnelle Abwicklung: Wir machen uns stark für eine schnelle und unbürokratische Schaden-Abwicklung"
+
+trust_bar_2:
+  items:
+    - number: "100 %"
+      label: "Schutz aller sensiblen Daten und Verträge"
+    - number: "0,- EUR"
+      label: "versteckte Gebühren"
+
+risiken_analysieren:
+  tag: "Risiken analysieren"
+  title: "Gerne analysiert die ASW südwest Ihre bestehenden Policen"
+  text: "Gerne analysiert die ASW südwest Ihre bestehenden Policen und zeigt Ihnen Optimierungsmöglichkeiten bei Vertragsinhalten und Konditionen auf."
+
+ueber_uns:
+  tag: "Ihre Immobilien, unsere Expertise"
+  title: "Verlässlicher Versicherungspartner für die Wohnungswirtschaft"
+  text: "Als spezialisierter Versicherungsmakler für die Wohnungswirtschaft bieten wir Ihnen individuelle Lösungen, die exakt auf die Bedürfnisse von Hausverwaltungen, Wohnungsunternehmen und Immobilienverwaltern abgestimmt sind. Mit fundiertem Fachwissen, persönlichem sowie digitalem Schadenservice und einem festen Ansprechpartner stehen wir Ihnen jederzeit zur Seite. Unser Fokus: langfristige Partnerschaft und Vertrauen -- für die professionelle Absicherung Ihrer Immobilien."
+  slogan: "Entdecken Sie Versicherung neu: #kompetent #effizient #kundenorientiert."
+
+netzwerk:
+  tag: "Netzwerk"
+  title: "Profitieren Sie von unserem Netzwerk und Partnern"
+  text: "Gerne unterstützen wir Sie dabei, die passenden Dienstleister und Unternehmen aus unserem breiten Netzwerk in der Wohnungswirtschaft zu finden und zusammenzubringen."
+  points:
+    - "Erfahrungswerte: Konfektionierte Lösungen durch jahrzehntelange Erfahrungen in der Wohnungswirtschaft"
+    - "Wohnungswirtschaft: Zugang zu unserem Partnernetzwerk"
+    - "Unbürokratische Lösungen: Als Partner der Assekuranz sind wir um kundenorientierte Lösungen bemüht - auch in schwierigen Situationen"
+
+unser_versprechen:
+  tag: "Unser Versprechen"
+  title: "Wir schützen Ihre Werte"
+  text: "Als Ihr Versicherungsmakler ist es unser zentrales Anliegen, Ihre Werte zu schützen. Dabei setzen wir auf innovative und maßgeschneiderte Versicherungslösungen, die exakt auf Ihre individuellen Bedürfnisse zugeschnitten sind. Durch unsere Unabhängigkeit und unser breites Netzwerk an erstklassigen Versicherern können wir für Sie die optimalen Produkte und Konditionen finden. Wir gehen über den reinen Vertragsabschluss hinaus und stehen Ihnen als verlässlicher Partner in allen Versicherungsfragen zur Seite -- heute und in Zukunft."
+  points:
+    - title: "Individueller Deckungsschutz"
+      text: "Mit unseren Rahmenverträgen genießen Sie einen Deckungsschutz mit vielen Erweiterungen."
+    - title: "Risikomanagement"
+      text: "Proaktive Maßnahmen reduzieren potentielle Risiken. Wir beraten Sie gerne."
+    - title: "Schadens-Support"
+      text: "Mit unserer persönlichen Schadenbetreuung helfen wir, den Anspruch gegenüber den Versicherern vollständig und deckungsgerecht geltend zu machen."
+
+prozess:
+  tag: "Unser Prozess"
+  title: "In vier Schritten zu Ihrem optimalen Schutz"
+  subtitle: "Strukturiert, transparent und auf Ihre Bedürfnisse zugeschnitten."
+  steps:
+    - number: "01"
+      title: "Risikoanalyse"
+      text: "Wir analysieren Ihren Gebäudebestand, Ihre Unternehmensstruktur und identifizieren alle relevanten Risiken."
+    - number: "02"
+      title: "Deckungskonzept"
+      text: "Auf Basis der Analyse entwickeln wir ein maßgeschneidertes Versicherungskonzept mit optimalen Konditionen."
+    - number: "03"
+      title: "Umsetzung"
+      text: "Wir übernehmen die Ausschreibung, Verhandlung und Platzierung Ihrer Versicherungsverträge."
+    - number: "04"
+      title: "Laufende Betreuung"
+      text: "Regelmäßige Überprüfung, Schadenmanagement und Anpassung an veränderte Anforderungen."
+
+team:
+  tag: "Unser Team"
+  title: "Erfahrene Spezialisten an Ihrer Seite"
+  subtitle: "Persönliche Ansprechpartner mit tiefem Branchenwissen."
+  members:
+    - name: "Denis Kohlrusch"
+      role: "Geschäftsführer"
+      image: "images/team/team-03.png"
+    - name: "Ulf Fichtinger"
+      role: "Geschäftsführer"
+      image: "images/team/team-06.png"
+    - name: "Birgit Doering"
+      role: "Referentin der Geschäftsführung"
+      image: "images/team/team-02.png"
+    - name: "Sven Brünau"
+      role: "Leitung Versicherung & Risikomanagement"
+      image: "images/team/team-05.png"
+  cta_text: "Gesamtes Team kennenlernen"
+  cta_link: "ueber-uns.html#team"
+
+blog:
+  tag: "Aktuelles"
+  title: "Fachbeiträge & Branchenwissen"
+  subtitle: "Bleiben Sie informiert über relevante Versicherungsthemen der Wohnungswirtschaft."
+  posts:
+    - category: "Cyberrisiken"
+      date: "15. März 2026"
+      reading_time: "5 Min. Lesezeit"
+      title: "Cyberversicherung 2026: Neue Anforderungen für die Wohnungswirtschaft"
+      excerpt: "Aktuelle Entwicklungen bei Cyberrisiken und was Wohnungsunternehmen jetzt beachten müssen."
+      link: "blog/cyberversicherung-2026.html"
+      image: "images/blog-cyber.jpg"
+    - category: "Gebäudeschutz"
+      date: "28. Februar 2026"
+      reading_time: "7 Min. Lesezeit"
+      title: "Elementarschadenversicherung: Pflicht oder Kür für Wohnungsbestände?"
+      excerpt: "Die Debatte um eine Pflichtversicherung für Elementarschäden und ihre Auswirkungen auf die Branche."
+      link: "blog/elementarschadenversicherung.html"
+      image: "images/blog-elementar.jpg"
+    - category: "D&O"
+      date: "10. Februar 2026"
+      reading_time: "4 Min. Lesezeit"
+      title: "D&O-Versicherung: Persönliche Haftung von Vorständen minimieren"
+      excerpt: "Warum eine D&O-Versicherung für Führungskräfte in der Wohnungswirtschaft unverzichtbar ist."
+      link: "blog/do-versicherung-haftung.html"
+      image: "images/blog-do.jpg"
+  cta_text: "Alle Beiträge ansehen"
+  cta_link: "blog.html"
+
+faq:
+  tag: "Häufige Fragen"
+  title: "Antworten auf Ihre Fragen"
+  subtitle: "Die wichtigsten Informationen zu unseren Leistungen und zur Zusammenarbeit."
+  items:
+    - question: "Welche Versicherungen sind für Wohnungsunternehmen Pflicht?"
+      answer: "Für Wohnungsunternehmen sind insbesondere die Gebäudeversicherung (Feuer, Leitungswasser, Sturm/Hagel), die Haus- und Grundbesitzerhaftpflicht sowie je nach Rechtsform eine D&O-Versicherung essenziell. Wir analysieren Ihren individuellen Bedarf und empfehlen die optimale Absicherung."
+    - question: "Was deckt eine Vermögensschadenhaftpflicht ab?"
+      answer: "Die Vermögensschadenhaftpflicht schützt Ihr Unternehmen vor Ansprüchen Dritter aufgrund von Vermögensschäden, die durch fehlerhafte Beratung, Verwaltungsfehler oder Pflichtverletzungen entstehen. Besonders für Hausverwaltungen und Wohnungsgenossenschaften ist dieser Schutz unverzichtbar."
+    - question: "Was unterscheidet ASW südwest von allgemeinen Versicherungsmaklern?"
+      answer: "Wir sind ausschließlich auf die Wohnungswirtschaft spezialisiert. Das bedeutet: branchenspezifische Rahmenverträge, tiefes Verständnis der regulatorischen Anforderungen, direkte Verbindungen zu den Verbänden (VdW, GdW) und ein Netzwerk aus spezialisierten Dienstleistern."
+    - question: "Wie läuft eine Schadenmeldung ab?"
+      answer: "Melden Sie Schäden direkt über unser Online-Formular oder telefonisch. Unser Schadenmanagement-Team übernimmt die komplette Abwicklung: Dokumentation, Kommunikation mit dem Versicherer, Koordination von Gutachtern und Begleitung bis zur Regulierung."
+    - question: "Ist eine Cyberversicherung für Wohnungsunternehmen relevant?"
+      answer: "Absolut. Wohnungsunternehmen verarbeiten große Mengen personenbezogener Daten und sind zunehmend Ziel von Cyberangriffen. Eine Cyberversicherung deckt Eigenschäden, Haftpflichtansprüche, IT-Forensik und DSGVO-Bußgelder ab."
+    - question: "Für welche Unternehmen ist ASW südwest der richtige Partner?"
+      answer: "Wir betreuen Wohnungsunternehmen, Wohnungsgenossenschaften, kommunale Wohnungsgesellschaften, Hausverwaltungen und weitere Akteure der Wohnungswirtschaft -- vom kleinen Bestandshalter bis zum großen Landesentwickler."
+
+partner:
+  tag: "Unsere Partner"
+  title: "Starke Verbindungen in der Branche"
+  items:
+    - name: "VdW südwest"
+    - name: "TDW"
+    - name: "AWTS"
+    - name: "NT Hannover"
+    - name: "NT"
+
+kontakt:
+  title: "Wir sind für Sie da!"
+  cards:
+    - title: "Schreiben Sie uns"
+      text: "Für Anfragen oder Wünsche steht Ihnen unser Team via E-Mail unter info@asw-suedwest.de gerne zur Verfügung."
+      email: "info@asw-suedwest.de"
+    - title: "Rufen Sie uns an"
+      text: "Oder rufen Sie uns an unter: +49 69 970 65 223."
+      phone: "+49 69 970 65 223"
+    - title: "Besuchen Sie uns"
+      text: "Unser Office finden Sie in der: Lise-Meitner-Straße 4, 60486 Frankfurt am Main."
+  note: "Kostenlos & unverbindlich"
+
+footer:
+  brand_text: "Spezialisierter Versicherungsmakler für die Wohnungswirtschaft. Seit über 25 Jahren Ihr Partner für maßgeschneiderte Versicherungslösungen."
+  copyright: "2026 ASW südwest GmbH. Alle Rechte vorbehalten."
+  linkedin_url: "https://www.linkedin.com/company/asw-suedwest/"

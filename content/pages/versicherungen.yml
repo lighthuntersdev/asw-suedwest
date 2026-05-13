@@ -1,0 +1,75 @@
+# =============================================================================
+# Versicherungen (versicherungen.html)
+# =============================================================================
+# Alle editierbaren Textfelder der Versicherungsseite.
+# Keine HTML-Tags -- nur reiner Text und Markdown fuer Fliesstext.
+# =============================================================================
+
+meta:
+  title: "Versicherungen für die Wohnungswirtschaft | ASW südwest"
+  description: "Umfassende Versicherungslösungen für Wohnungsunternehmen: Gebäudeversicherung, Haftpflicht, D&O, Cyberversicherung und Vertrauensschadenversicherung. Exklusive Rahmenverträge durch VdW/GdW-Partnerschaft."
+  og_title: "Versicherungen für die Wohnungswirtschaft | ASW südwest"
+  og_description: "Umfassende Versicherungslösungen für Wohnungsunternehmen: Gebäude, Haftpflicht, D&O, Cyber und mehr. Exklusive Konditionen durch VdW/GdW-Partnerschaft."
+
+hero:
+  badge: "Branchenspezifische Lösungen"
+  title: "Versicherungen für die Wohnungswirtschaft"
+  subtitle: "Maßgeschneiderte Versicherungskonzepte für Wohnungsunternehmen, Genossenschaften und Hausverwaltungen -- mit branchenspezifischer Expertise."
+  cta_primary:
+    text: "Unsere Lösungen"
+    link: "#cyber"
+  cta_secondary:
+    text: "Beratung anfragen"
+    link: "index.html#kontakt"
+
+cyberversicherung:
+  tag: "Cyberversicherung"
+  title: "Cyberversicherung für Ihre digitale Sicherheit"
+  text: "Eine Cyberversicherung schützt Ihr Unternehmen umfassend vor den finanziellen Folgen von Cyberangriffen, Datenverlust und IT-Ausfällen. Sie übernimmt die Kosten für Betriebsunterbrechungen, Datenwiederherstellung sowie IT-Forensik und hilft, Schäden schnell zu begrenzen. Auch Erpressung durch Ransomware, Hackerangriffe, Ansprüche Dritter aus DSGVO-Verstößen können abgesichert werden. Zusätzlich sind Kommunikations-, PR- und Rechtskosten zur Wiederherstellung Ihrer Reputation mitversichert."
+  points:
+    - "Deckung für Haftpflichtansprüche von Dritten"
+    - "Eigenschaden-Deckung wie Betriebsunterbrechung o.ä."
+    - "Krisenmanagement & Forensik"
+
+vermoegensschadenhaftpflicht:
+  tag: "Vermögensschadenhaftpflicht"
+  title: "Vermögensschadenhaftpflicht für Ihre Absicherung"
+  text: "Fehler in der Wohnungswirtschaft können schnell zu erheblichen Vermögensschäden führen. Eine Vielzahl an Vorschriften erhöht das Risiko von Haftungsfällen bei Pflichtverletzungen. Eine auf die Branche zugeschnittene Vermögensschaden-Haftpflichtversicherung schützt vor Ansprüchen Dritter und sichert auch Eigenschäden ab."
+  points:
+    - "Deckung bei finanziellen Folgen bei Beratungsfehlern"
+    - "Absicherung von reinen Vermögensschäden"
+    - "Abwehr von unberechtigten Ansprüchen"
+
+dno_versicherung:
+  tag: "D&O-Versicherung"
+  title: "D&O-Versicherung für Führungskräfte"
+  text: "Führungskräfte wie Geschäftsführer, Vorstände und Aufsichtsräte haften bei Pflichtverletzungen mit ihrem Privatvermögen. Eine D&O-Versicherung schützt sie gezielt vor solchen persönlichen Haftungsrisiken. Sie ergänzt die Vermögensschaden-Haftpflichtversicherung optimal. Wir unterstützen sie im Schadenfall auf Wunsch mit spezialisierten Anwälten."
+  points:
+    - "Schutz des Privatvermögens von Organmitgliedern"
+    - "Schutz bei Ansprüchen wegen Organisationsverschulden"
+    - "Rechtsschutzfunktion bei unberechtigten Ansprüchen"
+
+vertrauensschadenversicherung:
+  tag: "Vertrauensschadenversicherung"
+  title: "Vertrauensschadenversicherung für Ihre Vorsorge"
+  text: "Vertrauensmissbrauch durch Mitarbeiter kann Unternehmen erheblich schädigen und hohe finanzielle Schäden verursachen. Interne Schutzmaßnahmen reichen oft nicht aus, daher ist eine Vertrauensschadenversicherung ein wichtiger Bestandteil betrieblicher Vorsorge. Sie deckt Vermögensschäden ab, die durch vorsätzliche Handlungen wie Diebstahl, Betrug oder Sabotage entstehen. Der Schutz gilt für Schäden durch eigene Mitarbeiter, Dritte oder externe Hackerangriffe."
+  points:
+    - "Absicherung bei vorsätzlich unerlaubter Handlung"
+    - "Wiederherstellung der finanziellen Stabilität"
+    - "Deckungen bei Fake-Präsident oder Phishing-Angriffen"
+
+strafrechtsschutzversicherung:
+  tag: "Erw. Strafrechtsschutzversicherung"
+  title: "Erw. Strafrechtsschutzversicherung für Ihren Schutz"
+  text: "Schuldhafte Pflichtverletzungen mit strafrechtlichen Folgen -- etwa bei Umweltverstößen -- können hohe Verteidigungskosten verursachen. Dazu zählen Anwalts- und Gutachterhonorare, die häufig über dem gesetzlichen Gebührenrahmen liegen, sowie Gerichts- und Verwaltungskosten. Eine Strafrechtsschutzversicherung schützt vor diesen finanziellen Belastungen bei strafrechtsrelevanten Tätigkeitsfehlern."
+  points:
+    - "Umfassender Schutz bei strafrechtlichen Ermittlungen"
+    - "Kostentragung von Gutachten und Nebenleistungen"
+    - "Minimierung von Reputationsschäden"
+
+cta:
+  title: "Lassen Sie Ihren Versicherungsschutz prüfen"
+  text: "Wir analysieren Ihre bestehenden Policen und zeigen Ihnen Optimierungspotenziale -- kostenfrei und unverbindlich. Profitieren Sie von unseren exklusiven Rahmenverträgen."
+  cta_text: "Beratung anfragen"
+  cta_link: "mailto:info@asw-suedwest.de"
+  note: "Kostenlos & unverbindlich."

@@ -1,0 +1,138 @@
+# =============================================================================
+# Über uns (ueber-uns.html)
+# =============================================================================
+# Alle editierbaren Textfelder der Über-uns-Seite.
+# Keine HTML-Tags -- nur reiner Text und Markdown fuer Fliesstext.
+# =============================================================================
+
+meta:
+  title: "Über uns | ASW südwest -- Versicherungsmakler für die Wohnungswirtschaft"
+  description: "Erfahren Sie mehr über ASW südwest: Seit 1999 Ihr spezialisierter Versicherungsmakler für die Wohnungswirtschaft. Offizieller Partner des VdW südwest und GdW."
+  og_title: "Über ASW südwest -- Spezialmakler für die Wohnungswirtschaft"
+  og_description: "Seit 1999 spezialisiert auf Versicherungslösungen für die Wohnungswirtschaft. Offizieller Partner des VdW südwest und GdW."
+
+hero:
+  badge: "25 Jahre an Ihrer Seite"
+  title: "Persönlich. Kompetent. Für Sie."
+  subtitle: "Vertrauen, Expertise und Fachkunde sind für uns das Fundament einer partnerschaftlichen Zusammenarbeit. Wir lieben und leben Wohnungswirtschaft."
+  cta_primary:
+    text: "Unsere Werte"
+    link: "#werte"
+  cta_secondary:
+    text: "Partnerschaften"
+    link: "#partner"
+
+geschichte:
+  tag: "Unsere Geschichte"
+  title: "Von der Gründung zum führenden Branchenmakler"
+  text_1: "ASW südwest wurde 1999 in Frankfurt am Main gegründet -- mit einer klaren Mission: Wohnungsunternehmen, Genossenschaften und Hausverwaltungen mit branchenspezifischen Versicherungslösungen optimal abzusichern."
+  text_2: "Was als kleines Maklerbüro begann, ist heute ein Team aus 10 erfahrenen Branchenexperten, das über 3.000 GdW-Mitgliedsunternehmen bundesweit betreut. Unsere enge Zusammenarbeit mit dem VdW südwest und dem GdW ermöglicht exklusive Rahmenverträge, die allgemeine Makler nicht bieten können."
+  timeline:
+    - year: "1999"
+      title: "Gründung"
+      text: "Gründung als spezialisierter Versicherungsmakler für die Wohnungswirtschaft in Südwestdeutschland."
+    - year: "2005"
+      title: "VdW-Partnerschaft"
+      text: "Offizieller Versicherungspartner des VdW südwest. Beginn der exklusiven Rahmenverträge für Mitgliedsunternehmen."
+    - year: "2015"
+      title: "Bundesweite Betreuung"
+      text: "Ausbau auf bundesweite Betreuung von GdW-Mitgliedsunternehmen. Aufbau des Schadenmanagement-Teams."
+    - year: "Heute"
+      title: "Marktführer"
+      text: "10 Branchenexperten betreuen über 3.000 Mitgliedsunternehmen mit maßgeschneiderten Versicherungslösungen."
+
+team:
+  tag: "Unser Team"
+  title: "Die Menschen hinter ASW südwest"
+  subtitle: "Ein erfahrenes Team aus Versicherungsexperten, Schadenmanagern und Finanzberatern -- persönlich, kompetent und immer für Sie da."
+  members:
+    - name: "Denis Kohlrusch"
+      role: "Geschäftsführer"
+      description: "Leitet die strategische Ausrichtung der ASW südwest und verantwortet die Geschäftsentwicklung sowie die Partnerbeziehungen in der Wohnungswirtschaft."
+      image: "images/team/team-03.png"
+    - name: "Ulf Fichtinger"
+      role: "Geschäftsführer"
+      description: "Verantwortet die operative Führung der ASW südwest und die Weiterentwicklung der Versicherungs- und Finanzierungslösungen für die Wohnungswirtschaft."
+      image: "images/team/team-06.png"
+    - name: "Birgit Doering"
+      role: "Referentin der Geschäftsführung"
+      description: "Koordiniert die strategische Planung und unterstützt die Geschäftsführung bei allen operativen und administrativen Aufgaben."
+      image: "images/team/team-02.png"
+    - name: "Sven Brünau"
+      role: "Leitung Versicherung & Risikomanagement"
+      description: "Über 25 Jahre Erfahrung in der Versicherungsberatung. Gründungsmitglied der ASW südwest und strategischer Kopf des Unternehmens."
+      image: "images/team/team-05.png"
+    - name: "Sandra Klein"
+      role: "Prokuristin / Leitung Vertrieb"
+      description: "Verantwortlich für Kundenakquise und Beziehungsmanagement. Expertin für maßgeschneiderte Versicherungskonzepte."
+      image: "images/team/team-04.png"
+    - name: "Daniela Eidner"
+      role: "Versicherungsberatung Gebäude"
+      description: "Spezialistin für Gebäudeversicherung und Rahmenverträge. Betreut Wohnungsgenossenschaften in Hessen und Rheinland-Pfalz."
+      image: "images/team/team-08.png"
+    - name: "Andreas Fischer"
+      role: "Versicherungsberatung D&O / Haftpflicht"
+      description: "Experte für Directors & Officers Versicherung und Vermögensschadenhaftpflicht in der Wohnungswirtschaft."
+      image: "images/team/team-01.png"
+    - name: "Daniela Engel"
+      role: "Cyberversicherung & IT-Risiken"
+      description: "Spezialistin für digitale Risiken und Cyberversicherungslösungen. Berät zu DSGVO-Compliance und IT-Sicherheit."
+      image: "images/team/team-07.png"
+    - name: "Katharina Greifenberg"
+      role: "Schadenregulierung"
+      description: "Bearbeitet Schadenfälle von der Erstmeldung bis zur finalen Regulierung. Fokus auf schnelle, unbürokratische Abwicklung."
+      image: "images/team/team-09.png"
+    - name: "Thomas Pientka"
+      role: "Assistenz & Verwaltung"
+      description: "Organisiert den reibungslosen Büroalltag und ist erste Anlaufstelle für Kundenanfragen und Terminvereinbarungen."
+      image: "images/team/team-10.png"
+
+werte:
+  tag: "Unsere Werte"
+  title: "Wofür wir stehen"
+  subtitle: "Vier Grundsätze prägen unsere Arbeit -- jeden Tag, bei jedem Kunden, in jeder Beratung."
+  items:
+    - title: "Spezialisierung"
+      text: "100 % Fokus auf die Wohnungswirtschaft. Keine Ablenkung durch andere Branchen -- unser gesamtes Wissen, unsere Kontakte und unsere Rahmenverträge gelten ausschließlich dieser Branche."
+    - title: "Transparenz"
+      text: "Offene Kommunikation, nachvollziehbare Empfehlungen und ehrliche Beratung. Wir zeigen Ihnen alle Optionen -- mit Vor- und Nachteilen -- damit Sie fundiert entscheiden können."
+    - title: "Persönlicher Service"
+      text: "Feste Ansprechpartner, die Ihr Unternehmen und Ihre Bedürfnisse kennen. Keine Callcenter, keine anonymen Ticketsysteme -- persönliche Betreuung auf Augenhöhe."
+    - title: "Branchennetzwerk"
+      text: "Tiefe Verwurzelung in der Wohnungswirtschaft durch Partnerschaften mit VdW südwest, GdW, TDW und weiteren Verbänden. Dieses Netzwerk sichert Ihnen exklusive Konditionen."
+
+partnerschaften:
+  tag: "Partnerschaften"
+  title: "Starke Verbindungen in der Branche"
+  subtitle: "Unsere Partnerschaften ermöglichen exklusive Rahmenverträge und erstklassige Konditionen für die Wohnungswirtschaft."
+  items:
+    - name: "VdW südwest"
+      text: "Verband der Südwestdeutschen Wohnungswirtschaft. Als offizieller Versicherungspartner betreuen wir die Mitgliedsunternehmen in Hessen, Rheinland-Pfalz und dem Saarland mit exklusiven Rahmenverträgen."
+    - name: "GdW Bundesverband"
+      text: "Bundesverband deutscher Wohnungs- und Immobilienunternehmen. Über den GdW erreichen wir mehr als 3.000 Mitgliedsunternehmen bundesweit und verhandeln branchenführende Konditionen."
+    - name: "TDW südwest"
+      text: "Treuhandstelle der Wohnungswirtschaft. Enge Zusammenarbeit bei Prüfung und Beratung von Wohnungsunternehmen, insbesondere bei Risikobewertung und Compliance."
+    - name: "AWTS"
+      text: "Arbeitsgemeinschaft Wohnungswirtschaftliche Treuhandstellen. Gemeinsame Entwicklung von branchenspezifischen Versicherungskonzepten und Risikomanagement-Standards."
+    - name: "NT Hannover"
+      text: "Norddeutsche Treuhandstelle. Partnerschaft zur bundesweiten Ausweitung unserer Betreuungskapazität und zum Austausch bewährter Versicherungslösungen."
+
+zahlen:
+  tag: "Zahlen & Fakten"
+  title: "Das ist ASW südwest"
+  items:
+    - number: "25+"
+      label: "Jahre Branchenerfahrung"
+    - number: "3.000+"
+      label: "GdW-Mitglieder betreut"
+    - number: "50+"
+      label: "Jahre Expertise im Team"
+    - number: "100%"
+      label: "Spezialisierung Wohnungswirtschaft"
+
+cta:
+  title: "Lernen Sie uns persönlich kennen"
+  text: "Vereinbaren Sie ein unverbindliches Erstgespräch und erfahren Sie, wie wir Ihre Wohnungsbestände optimal absichern können."
+  cta_text: "Kontakt aufnehmen"
+  cta_link: "mailto:info@asw-suedwest.de"
+  note: "Kostenlos & unverbindlich."

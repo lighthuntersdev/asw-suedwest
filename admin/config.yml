@@ -3,21 +3,194 @@ backend:
   repo: lighthuntersdev/asw-suedwest
   branch: main
 
-media_folder: "images/blog"
-public_folder: "/images/blog"
+media_folder: "images"
+public_folder: "/images"
 
 collections:
   - name: "blog"
-    label: "Blog-Beiträge"
+    label: "Blog-Beitr\xE4ge"
     folder: "content/blog"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
-      - { label: "Kategorie", name: "category", widget: "select", options: ["Versicherung", "Cyberrisiken", "Gebäudeschutz", "D&O", "Haftpflicht", "Wohnungswirtschaft", "Finanzierung", "Recht"] }
+      - { label: "Kategorie", name: "category", widget: "select", options: ["Versicherung", "Cyberrisiken", "Geb\xE4udeschutz", "D&O", "Haftpflicht", "Wohnungswirtschaft", "Finanzierung", "Recht", "Datenschutz", "Versicherungswissen"] }
       - { label: "Lesezeit", name: "readtime", widget: "string", default: "5 Min. Lesezeit" }
       - { label: "Kurzbeschreibung", name: "description", widget: "text" }
       - { label: "Beitragsbild", name: "image", widget: "image", required: false }
       - { label: "Beitragsbild Alt-Text", name: "image_alt", widget: "string", required: false }
       - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Seiten"
+    files:
+      - name: "startseite"
+        label: "Startseite"
+        file: "content/pages/startseite.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "text" }
+              - { label: "Button 1 Text", name: "cta_primary", widget: "string" }
+              - { label: "Button 2 Text", name: "cta_secondary", widget: "string" }
+          - label: "Kennzahlen"
+            name: "trust_bar"
+            widget: "list"
+            fields:
+              - { label: "Zahl", name: "number", widget: "string" }
+              - { label: "Beschreibung", name: "label", widget: "string" }
+          - label: "Leistungen \xDCbersicht"
+            name: "leistungen"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "text" }
+              - label: "Karten"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Titel", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+                  - { label: "Link Text", name: "link_text", widget: "string", default: "Mehr erfahren" }
+          - label: "Schadenbearbeitung"
+            name: "schadenbearbeitung"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Punkte", name: "points", widget: "list", field: { label: "Punkt", name: "point", widget: "string" } }
+          - label: "\xDCber uns Bereich"
+            name: "ueber_uns"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Tagline", name: "tagline", widget: "string" }
+          - label: "Netzwerk"
+            name: "netzwerk"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Punkte"
+                name: "points"
+                widget: "list"
+                fields:
+                  - { label: "Titel", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+          - label: "Wir sch\xFCtzen Ihre Werte"
+            name: "werte_schutz"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - label: "Punkte"
+                name: "points"
+                widget: "list"
+                fields:
+                  - { label: "Titel", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+
+      - name: "versicherungen"
+        label: "Versicherungen"
+        file: "content/pages/versicherungen.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "text" }
+          - label: "Produkte"
+            name: "produkte"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Punkte", name: "points", widget: "list", field: { label: "Punkt", name: "point", widget: "string" } }
+
+      - name: "finanzierungen"
+        label: "Finanzierungen"
+        file: "content/pages/finanzierungen.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "text" }
+          - label: "NT ImmoConsult"
+            name: "nt_immoconsult"
+            widget: "object"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+          - label: "Dienstleistungen"
+            name: "dienstleistungen"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+      - name: "benefits"
+        label: "Benefits"
+        file: "content/pages/benefits.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "text" }
+          - label: "Produkte"
+            name: "produkte"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "markdown" }
+              - { label: "CTA Text", name: "cta", widget: "string", default: "Sprechen Sie uns an!" }
+
+      - name: "services"
+        label: "Services"
+        file: "content/pages/services.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "text" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+      - name: "herzenspartner"
+        label: "Herzenspartner"
+        file: "content/pages/herzenspartner.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge", name: "badge", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Untertitel", name: "subtitle", widget: "text" }
+          - label: "Abschnitte"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "markdown" }

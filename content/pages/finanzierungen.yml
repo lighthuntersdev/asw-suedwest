@@ -1,0 +1,60 @@
+# =============================================================================
+# Finanzierungen (finanzierungen.html)
+# =============================================================================
+# Alle editierbaren Textfelder der Finanzierungsseite.
+# Keine HTML-Tags -- nur reiner Text und Markdown fuer Fliesstext.
+# =============================================================================
+
+meta:
+  title: "Finanzierungen für Wohnungsunternehmen | ASW südwest"
+  description: "Finanzierungslösungen für die Wohnungswirtschaft: Neubaufinanzierung, Modernisierung, Kapitalanlagestrategie. In Zusammenarbeit mit NT ImmoConsult GmbH."
+  og_title: "Finanzierungen für Wohnungsunternehmen | ASW südwest"
+  og_description: "Finanzierungslösungen für die Wohnungswirtschaft: Neubau, Modernisierung, Kapitalanlage. In Zusammenarbeit mit NT ImmoConsult GmbH."
+
+hero:
+  badge: "Finanzierung & Kapitalanlage"
+  title: "Invest in die Zukunft"
+  subtitle: "Professionelles Finanzmanagement gehört zu den wichtigen Erfolgsfaktoren in der Wohnungswirtschaft und sollte deshalb zusammen mit Experten umgesetzt werden."
+  cta_primary:
+    text: "Finanzierungslösungen"
+    link: "#neubau"
+  cta_secondary:
+    text: "Beratung anfragen"
+    link: "index.html#kontakt"
+
+nt_immoconsult:
+  tag: "NT ImmoConsult"
+  title: "Eine solide Finanzierung als Basis"
+  text: "Unser Schwesterunternehmen, die NT ImmoConsult, verfügt über langjährige Erfahrungen und weitreichende Branchenkenntnisse. Ihre Experten sind den vitalen Interessen unserer Kunden verpflichtet. Als ungebundener Dienstleister der Wohnungswirtschaft kann die NT ImmoConsult auf das gesamte Angebotsspektrum zugreifen und Ihr Finanzportfolio nachhaltig optimieren. In zentraler Funktion zwischen Wohnungsunternehmen und den verschiedenen Finanzinstituten sorgen wir zudem dafür, Ihren Aufwand im Finanzmanagement deutlich zu reduzieren."
+
+dienstleistungen:
+  cards:
+    - title: "Darlehensprodukte"
+      text: "Vermittlung verschiedener Darlehensprodukte: Kapitalmarktmittel, KfW-Darlehen, Modernisierungs- und Instandhaltungsdarlehen, kurzfristige Kredite und Unternehmensfinanzierungen."
+    - title: "Umschuldungen & Forward"
+      text: "Durchführung von Umschuldungen und Forward-Darlehen."
+    - title: "Portfolio-Analyse"
+      text: "Ermittlung von Beleihungswerten, Mobilisierung von Finanzierungsreserven, Analyse von Darlehensportfolios und Zinsrisiken."
+    - title: "Festgeldanlagen"
+      text: "Vermittlung von Festgeldanlagen. Die richtige Finanzierungsentscheidung ist maßgeblich für die Wirtschaftlichkeit Ihrer Maßnahmen."
+  cta_text: "Hier geht's zur NT ImmoConsult"
+
+zahlen:
+  tag: "Finanzierungskompetenz"
+  title: "Zahlen, die für sich sprechen"
+  items:
+    - number: "500+"
+      label: "Finanzierungsprojekte begleitet"
+    - number: "2 Mrd.+"
+      label: "Euro Finanzierungsvolumen"
+    - number: "30+"
+      label: "Bankpartner im Netzwerk"
+    - number: "100%"
+      label: "Bankenunabhängig"
+
+cta:
+  title: "Finanzierung neu denken"
+  text: "Lassen Sie Ihre bestehende Finanzierungsstruktur prüfen oder besprechen Sie Ihr nächstes Bauprojekt mit uns -- kostenfrei und unverbindlich."
+  cta_text: "Beratung anfragen"
+  cta_link: "mailto:info@asw-suedwest.de"
+  note: "Kostenlos & unverbindlich."

@@ -1,0 +1,54 @@
+# =============================================================================
+# Services (services.html)
+# =============================================================================
+# Alle editierbaren Textfelder der Services-Seite.
+# Keine HTML-Tags -- nur reiner Text und Markdown fuer Fliesstext.
+# =============================================================================
+
+meta:
+  title: "Services & Netzwerk | ASW südwest -- Spezialmakler Wohnungswirtschaft"
+  description: "Zusätzliche Services von ASW südwest: Sachverständige, Brandschutzberatung, technisches Risikomanagement, Fachanwälte und digitales Kundenportal für die Wohnungswirtschaft."
+  og_title: "Services & Netzwerk | ASW südwest"
+  og_description: "Zusätzliche Services: Sachverständige, Brandschutz, Risikomanagement, Fachanwälte und digitales Kundenportal für die Wohnungswirtschaft."
+
+hero:
+  badge: "Mehrwert über Versicherung hinaus"
+  title: "Services & Netzwerk"
+  subtitle: "Neben der reinen Versicherungsvermittlung bieten wir Ihnen ein breites Netzwerk an spezialisierten Dienstleistern und digitale Services, die Ihren Verwaltungsalltag erleichtern."
+  cta_primary:
+    text: "Services entdecken"
+    link: "#deckungsanalyse"
+  cta_secondary:
+    text: "Beratung anfragen"
+    link: "index.html#kontakt"
+
+deckungsanalyse:
+  tag: "Deckungsanalyse"
+  title: "Wirksame Risikovorsorge für Ihr Unternehmen"
+  text_1: "Zu den Pflichten der Unternehmensführung gehören auch der Aufbau und das Unterhalten einer wirksamen und effizienten Risikovorsorge zum Schutz des Unternehmens, seiner Mitarbeiter und seines Vermögens."
+  text_2: "Im Rahmen dieses Risikomanagements führen wir Versicherungsprüfungen für Sie durch. Wir weisen Sie auf fehlende Versicherungen hin und beraten Sie bezüglich einer Verbesserung des Versicherungsschutzes. Ferner prüfen wir bestehende Verträge hinsichtlich der Ausgestaltung des Versicherungsschutzes und der Angemessenheit der vereinbarten Prämien."
+  text_3: "Im Vordergrund von Analyse und Empfehlungen steht weniger, jedes denkbare Unternehmensrisiko durch Versicherungen abzudecken. Vielmehr ist es zunächst notwendig, die Risiken zu erkennen. Nur wer seine Risikosituation richtig einschätzt, kann entscheiden, ob und wie er sich hiergegen absichern möchte. Kontaktieren Sie uns."
+
+netzwerkpartner:
+  tag: "Netzwerkpartner"
+  title: "Der richtige Partner für Ihre Anfrage"
+  text: "Ob Bau-Sachverständige, Brandschutzberater, Beratung vor der Installation von Branddetektoren, Sprinklersystemen, oder Einbruchmeldeanlagen, wir kennen den richtigen Partner für Ihre Anfrage. Mit unseren speziellen Dienstleistungen im Bereich des technischen Risikomanagements unterstützen wir Sie gerne. Sprechen Sie uns an."
+
+dienstleistungen:
+  tag: "Dienstleistungen"
+  title: "Ihr Dienstleister für attraktive Services"
+  text: "Die ASW südwest GmbH versteht sich als Dienstleister seiner Kunden. Deshalb machen wir Ihnen eine Reihe kostenloser Serviceangebote, die unser Portfolio für Sie noch attraktiver gestalten: umfassende Betreuung unserer Kunden vor Ort, jährliche Risikoüberprüfung, Empfehlungen zu Präventivmaßnahmen, schnelle Schadensabwicklung."
+
+naturgefahren:
+  tag: "Naturgefahren"
+  title: "Risiken frühzeitig erkennen und absichern"
+  text_1: "Naturgefahren nehmen zu -- und mit ihnen die Risiken für global agierende Unternehmen. Stürme, Überschwemmungen, Starkregen, und Hagel sind längst keine Ausnahmeereignisse mehr, sondern zunehmend spürbare Folgen des Klimawandels. Hinzu kommen seltene, aber potenziell katastrophale Naturereignisse wie Erdbeben, Tsunamis oder Vulkanausbrüche."
+  text_2: "Damit entstehen Naturgefahren immer größere Angriffsflächen -- mit teils existenzbedrohenden Auswirkungen."
+  text_3: "Mit einer Naturgefahrenanalyse auf Objektebene können Sie Risiken frühzeitig erkennen, wirtschaftlich bewerten und gezielt absichern -- damit Unternehmen handlungsfähig bleiben."
+
+cta:
+  title: "Unser Netzwerk für Ihren Erfolg"
+  text: "Profitieren Sie von unserem umfangreichen Dienstleisternetzwerk und unseren digitalen Services. Vereinbaren Sie ein unverbindliches Gespräch."
+  cta_text: "Kontakt aufnehmen"
+  cta_link: "mailto:info@asw-suedwest.de"
+  note: "Kostenlos & unverbindlich."

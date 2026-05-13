@@ -1,0 +1,77 @@
+# =============================================================================
+# Herzenspartner (herzenspartner.html)
+# =============================================================================
+# Alle editierbaren Textfelder der Herzenspartner-Seite.
+# Keine HTML-Tags -- nur reiner Text und Markdown fuer Fliesstext.
+# =============================================================================
+
+meta:
+  title: "Herzenspartner | ASW südwest -- Bärenherz Stiftung"
+  description: "ASW südwest unterstützt die Bärenherz Stiftung -- Kinderhospize in Wiesbaden und Leipzig für Familien mit unheilbar erkrankten Kindern."
+
+hero:
+  badge: "Herzenspartner"
+  title: "Unsere Unterstützung für die Bärenherz Stiftung"
+  subtitle: "Wir sind stolz darauf, das Kinderhospiz Bärenherz über die Bärenherz Stiftung zu fördern. Diese Stiftung leistet bemerkenswerte Arbeit für Familien, deren Kinder unheilbar erkrankt sind -- und begleitet sie mit Fürsorge, Empathie und hoher fachlicher Kompetenz."
+  cta_primary:
+    text: "Mehr erfahren"
+    link: "#was-macht-baerenherz"
+  cta_secondary:
+    text: "So können Sie helfen"
+    link: "#helfen"
+
+stiftung:
+  tag: "Die Stiftung"
+  title: "Was macht die Bärenherz Stiftung?"
+  items:
+    - title: "Kinderhospize & Kinderhaus"
+      text: "Die Stiftung unterstützt zwei Kinderhospize -- in Wiesbaden und in Leipzig -- sowie das Kinderhaus \"Nesthäkchen\", eine Einrichtung für schwerstbehinderte Kinder."
+    - title: "Ganzheitliche Begleitung"
+      text: "In den Hospizen finden Familien Beistand von der Diagnose bis über den Tod des Kindes hinaus: Beratung, qualifizierte Pflege, Trauerbegleitung und auch Angebote für die Geschwister."
+    - title: "Finanzierung"
+      text: "Die Stiftung finanziert jährlich Millionenbeträge, um Lücken zu schließen, die durch Kostenträger nicht vollständig abgedeckt werden."
+
+bedeutung:
+  tag: "Bedeutung"
+  title: "Warum ist die Arbeit so wichtig?"
+  text: "Ein Kinderhospiz ist kein Ort, den Familien wählen, aber oft ein Ort, den sie dringend brauchen. Dort finden sie Sicherheit, Trost und Gemeinschaft in ihren schwierigsten Lebensmomenten. Die Bärenherz Stiftung stellt sicher, dass diese wertvolle Arbeit langfristig möglich ist -- auch und gerade dort, wo öffentliche Mittel nicht ausreichen."
+
+mittelverwendung:
+  tag: "Mittelverwendung"
+  title: "Wie werden die Mittel verwendet?"
+  items:
+    - title: "Laufender Betrieb"
+      text: "Spenden fließen direkt in den laufenden Betrieb der Hospize: Personal, Ausstattung und Pflege."
+    - title: "Therapieangebote"
+      text: "Darüber hinaus werden zusätzliche Projekte unterstützt wie Therapieangebote (Musik- oder tiergestützte Therapie)."
+    - title: "Kinderhaus Nesthäkchen"
+      text: "Die Stiftung trägt mit Zuschüssen zur Pflege und Betreuung schwerstbehinderter Kinder bei."
+
+engagement:
+  tag: "Unser Engagement"
+  title: "Darum setzen wir uns dafür ein"
+  text_1: "Für uns ist die Unterstützung der Bärenherz Stiftung eine Herzensangelegenheit. Mit regelmäßigen Spenden möchten wir dazu beitragen, dass Familien in einer extrem belastenden Lebenssituation Entlastung und eine menschliche Begleitung erfahren können."
+  text_2: "Die Arbeit von Bärenherz bedeutet Lebensqualität, Würde und Hoffnung -- auch dann, wenn die Zeit begrenzt ist."
+
+helfen:
+  tag: "Mitmachen"
+  title: "So können auch Sie helfen"
+  items:
+    - title: "Spende"
+      text: "Mit einer Spende -- jede noch so kleine Summe trägt dazu bei, den Alltag im Hospiz zu gestalten."
+    - title: "Zustiftung"
+      text: "Mit einer Zustiftung, um die langfristige Finanzierung der Arbeit abzusichern."
+    - title: "Engagement"
+      text: "Oder mit einem Engagement, zum Beispiel bei Aktionen zum Tag der Kinderhospizarbeit."
+  schlussatz: "Lassen Sie uns gemeinsam Hoffnung schenken."
+
+cta:
+  title: "Gemeinsam Gutes tun"
+  text: "Erfahren Sie mehr über unsere Partnerschaft mit der Bärenherz Stiftung oder sprechen Sie uns direkt an."
+  cta_primary:
+    text: "Kontakt aufnehmen"
+    link: "mailto:info@asw-suedwest.de"
+  cta_secondary:
+    text: "Über uns"
+    link: "ueber-uns.html"
+  note: "Kostenlos & unverbindlich. Antwort innerhalb von 24 Stunden."

@@ -1,0 +1,68 @@
+# =============================================================================
+# Benefits (benefits.html)
+# =============================================================================
+# Alle editierbaren Textfelder der Benefits-Seite.
+# Keine HTML-Tags -- nur reiner Text und Markdown fuer Fliesstext.
+# =============================================================================
+
+meta:
+  title: "Ihre Vorteile mit ASW südwest | Spezialmakler Wohnungswirtschaft"
+  description: "Ihre Vorteile mit ASW südwest: Exklusive Rahmenverträge, persönliche Betreuung, 24/7 Schadenmanagement, VdW/GdW-Partnerschaft und transparente Kosten."
+  og_title: "Ihre Vorteile mit ASW südwest | Spezialmakler Wohnungswirtschaft"
+  og_description: "Exklusive Rahmenverträge, persönliche Betreuung, 24/7 Schadenmanagement und VdW/GdW-Netzwerk. Entdecken Sie Ihre Vorteile."
+
+hero:
+  badge: "Betriebliche Vorsorge"
+  title: "Benefits für die Wohnungswirtschaft"
+  subtitle: "In der Wohnungswirtschaft wird langfristiges Denken großgeschrieben -- und genau diese Haltung ist auch bei der Altersvorsorge gefragt."
+  cta_primary:
+    text: "Vorteile entdecken"
+    link: "#rahmenvertraege"
+  cta_secondary:
+    text: "Beratung anfragen"
+    link: "index.html#kontakt"
+
+betriebliche_altersversorgung:
+  tag: "Betriebliche Altersversorgung"
+  title: "Mitarbeitende nachhaltig binden"
+  text_1: "Die betriebliche Altersvorsorge (bAV) bietet Wohnungsbaugesellschaften, Genossenschaften und Hausverwaltungen die Möglichkeit, ihre Mitarbeitenden nachhaltig zu binden und attraktiv für Fachkräfte zu bleiben."
+  text_2: "Die Branche steht vor demografischen Herausforderungen: Fachkräftemangel, Altersstrukturwandel, und steigende Anforderungen im Bereich Digitalisierung und Nachhaltigkeit. Die bAV ist ein effektives Mittel, um qualifizierte Mitarbeitende zu halten und neue Talente zu gewinnen -- ganz ohne hohe Lohnkostensteigerungen."
+  cta_text: "Sprechen Sie uns an!"
+
+versorgungswerk:
+  title: "Versorgungswerk der Wohnungswirtschaft"
+  text: "Das Versorgungswerk der Wohnungswirtschaft e.V. ist eine branchenspezifische Einrichtung, die Unternehmen der Wohnungs- und Immobilienwirtschaft dabei unterstützt, ihren Mitarbeitenden eine attraktive betriebliche Altersvorsorge (bAV) anzubieten. Als eingetragener Verein mit Sitz in Hannover, arbeitet das Versorgungswerk eng mit Partnern wie der ASW südwest zusammen, um maßgeschneiderte Versorgungslösungen für die Branche bereitzustellen."
+  hinweis: "Der Link zum Portal des Versorgungswerk folgt in Kürze."
+  cta_text: "Sprechen Sie uns an!"
+
+betriebliche_krankenversicherung:
+  tag: "Betriebliche Krankenversicherung"
+  title: "Budgettarif -- flexibel, attraktiv, steuerfrei!"
+  text: "Der Budgettarif ist eine besonders beliebte Form der betrieblichen Krankenversicherung (bKV). Arbeitgeber stellen ihren Mitarbeitenden dabei ein jährliches Gesundheitsbudget zur Verfügung -- z. B. 300 EUR, 600 EUR oder mehr. Die versicherten Personen können dieses Budget frei für verschiedene Gesundheitsleistungen nutzen."
+  cta_text: "Sprechen Sie uns an!"
+
+dread_disease:
+  title: "Dread Disease & Berufsunfähigkeit"
+  text_1: "Die klassische betriebliche Altersvorsorge ist längst nicht mehr nur ein Instrument für den Ruhestand -- sie kann weit mehr. Integrieren Sie Berufsunfähigkeits- und Dread-Disease-Absicherungen clever in Ihr bAV-Konzept und bieten Sie Ihrer Belegschaft Sicherheit in allen Lebensphasen."
+  text_2: "Mit einer erweiterten betrieblichen Vorsorge, die auch bei Krankheit und Berufsunfähigkeit greift, schaffen Sie echten Mehrwert für Ihre Mitarbeitenden -- und sichern sich gleichzeitig einen strategischen Vorsprung im Wettbewerb um Fachkräfte."
+  cta_text: "Sprechen Sie uns an!"
+
+zahlen:
+  tag: "Auf einen Blick"
+  title: "Das macht den Unterschied"
+  items:
+    - number: "3.000+"
+      label: "Betreute Mitgliedsunternehmen"
+    - number: "97%"
+      label: "Kundenzufriedenheit"
+    - number: "24/7"
+      label: "Schaden-Notfall-Service"
+    - number: "0 EUR"
+      label: "Versteckte Zusatzkosten"
+
+cta:
+  title: "Überzeugen Sie sich selbst"
+  text: "Vereinbaren Sie ein unverbindliches Erstgespräch und erfahren Sie, wie viel Optimierungspotenzial in Ihrem aktuellen Versicherungsschutz steckt."
+  cta_text: "Kontakt aufnehmen"
+  cta_link: "mailto:info@asw-suedwest.de"
+  note: "Kostenlos & unverbindlich."
