@@ -44,9 +44,9 @@ export async function onRequestPost(context) {
 
     if (!resendResponse.ok) {
       const error = await resendResponse.text();
-      console.error('Resend error:', error);
+      console.error('Resend error:', resendResponse.status, error);
       return new Response(
-        JSON.stringify({ success: false, error: 'E-Mail konnte nicht gesendet werden.' }),
+        JSON.stringify({ success: false, error: 'E-Mail konnte nicht gesendet werden.', debug: error }),
         { status: 500, headers: { 'Content-Type': 'application/json', ...corsHeaders } }
       );
     }
