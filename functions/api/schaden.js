@@ -11,16 +11,21 @@ export async function onRequestPost(context) {
     const formData = await request.formData();
     const data = Object.fromEntries(formData.entries());
 
-    const turnstileToken = data['cf-turnstile-response'];
-    if (env.TURNSTILE_SECRET && turnstileToken) {
+    const turnstileToken = formData.get('cf-turnstile-response');
+    if (env.TURNSTILE_SECRET) {
+      if (!turnstileToken) {
+        return new Response(
+          JSON.stringify({ success: false, error: 'Bitte lösen Sie das CAPTCHA.' }),
+          { status: 403, headers: { 'Content-Type': 'application/json', ...corsHeaders } }
+        );
+      }
+      const verifyBody = new URLSearchParams();
+      verifyBody.append('secret', env.TURNSTILE_SECRET);
+      verifyBody.append('response', turnstileToken);
+      verifyBody.append('remoteip', request.headers.get('CF-Connecting-IP') || '');
       const verifyResponse = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          secret: env.TURNSTILE_SECRET,
-          response: turnstileToken,
-          remoteip: request.headers.get('CF-Connecting-IP'),
-        }),
+        body: verifyBody,
       });
       const verifyResult = await verifyResponse.json();
       if (!verifyResult.success) {
@@ -45,12 +50,17 @@ export async function onRequestPost(context) {
     const attachments = [];
     const files = formData.getAll('dokumente');
     for (const file of files) {
-      if (file && file.size && file.size > 0) {
+      if (file && file.size && file.size > 0 && file.size <= 10 * 1024 * 1024) {
         const buffer = await file.arrayBuffer();
-        const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)));
+        const bytes = new Uint8Array(buffer);
+        let binary = '';
+        const chunkSize = 8192;
+        for (let i = 0; i < bytes.length; i += chunkSize) {
+          binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunkSize));
+        }
         attachments.push({
           filename: file.name,
-          content: base64,
+          content: btoa(binary),
         });
       }
     }
