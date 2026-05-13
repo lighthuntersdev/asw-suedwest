@@ -66,7 +66,7 @@ function generateBlogPost(post, slug) {
   const { frontmatter: fm, body } = post;
   const articleHtml = mdToHtml(body);
   const dateFormatted = formatDate(fm.date);
-  const imgSrc = fm.image || 'images/hero-building.jpg';
+  const imgSrc = '../' + (fm.image || 'images/hero-building.jpg');
   const imgAlt = fm.image_alt || fm.title;
 
   return `<!DOCTYPE html>
@@ -86,30 +86,30 @@ function generateBlogPost(post, slug) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <nav role="navigation" aria-label="Hauptnavigation">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo" aria-label="ASW s&uuml;dwest &ndash; Startseite">
-        <img src="images/logo-horizontal.svg" alt="ASW s&uuml;dwest" style="height: 40px; width: auto;">
+      <a href="../index.html" class="nav-logo" aria-label="ASW s&uuml;dwest &ndash; Startseite">
+        <img src="../images/logo-horizontal.svg" alt="ASW s&uuml;dwest" style="height: 40px; width: auto;">
       </a>
       <ul class="nav-links">
         <li class="nav-dropdown">
-          <a href="versicherungen.html">Leistungen <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+          <a href="../versicherungen.html">Leistungen <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
           <ul class="nav-dropdown-menu">
-            <li><a href="versicherungen.html">Versicherungen</a></li>
-            <li><a href="finanzierungen.html">Finanzierungen</a></li>
-            <li><a href="benefits.html">Benefits</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="../versicherungen.html">Versicherungen</a></li>
+            <li><a href="../finanzierungen.html">Finanzierungen</a></li>
+            <li><a href="../benefits.html">Benefits</a></li>
+            <li><a href="../services.html">Services</a></li>
           </ul>
         </li>
-        <li><a href="ueber-uns.html">&Uuml;ber uns</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="schadenportal.html">Schadenportal</a></li>
-        <li><a href="index.html#faq">FAQ</a></li>
-        <li><a href="herzenspartner.html">Herzenspartner</a></li>
-        <li><a href="index.html#kontakt" class="nav-cta">Risikoanalyse</a></li>
+        <li><a href="../ueber-uns.html">&Uuml;ber uns</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../schadenportal.html">Schadenportal</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+        <li><a href="../herzenspartner.html">Herzenspartner</a></li>
+        <li><a href="../index.html#kontakt" class="nav-cta">Risikoanalyse</a></li>
       </ul>
       <button class="nav-mobile-toggle" aria-label="Men&uuml; &ouml;ffnen">
         <span></span><span></span><span></span>
@@ -120,9 +120,9 @@ function generateBlogPost(post, slug) {
   <section class="blog-article-hero" style="padding-top: 100px;">
     <div class="container">
       <div style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 24px; display: flex; align-items: center; gap: 6px;">
-        <a href="index.html" style="color: var(--text-muted); text-decoration: none;">Startseite</a>
+        <a href="../index.html" style="color: var(--text-muted); text-decoration: none;">Startseite</a>
         <span>&rsaquo;</span>
-        <a href="blog.html" style="color: var(--text-muted); text-decoration: none;">Blog</a>
+        <a href="../blog.html" style="color: var(--text-muted); text-decoration: none;">Blog</a>
         <span>&rsaquo;</span>
         <span style="color: var(--text-secondary);">${fm.title}</span>
       </div>
@@ -164,32 +164,32 @@ function generateBlogPost(post, slug) {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="footer-logo"><img src="images/logo-horizontal.svg" alt="ASW s&uuml;dwest" style="height: 36px; width: auto; filter: brightness(0) invert(1);"></a>
+          <a href="../index.html" class="footer-logo"><img src="../images/logo-horizontal.svg" alt="ASW s&uuml;dwest" style="height: 36px; width: auto; filter: brightness(0) invert(1);"></a>
           <p>Spezialisierter Versicherungsmakler f&uuml;r die Wohnungswirtschaft. Seit &uuml;ber 25 Jahren Ihr Partner.</p>
         </div>
         <div class="footer-column">
           <h4>Leistungen</h4>
           <ul>
-            <li><a href="versicherungen.html">Versicherungen</a></li>
-            <li><a href="finanzierungen.html">Finanzierungen</a></li>
-            <li><a href="benefits.html">Ihre Vorteile</a></li>
-            <li><a href="services.html">Services &amp; Netzwerk</a></li>
+            <li><a href="../versicherungen.html">Versicherungen</a></li>
+            <li><a href="../finanzierungen.html">Finanzierungen</a></li>
+            <li><a href="../benefits.html">Ihre Vorteile</a></li>
+            <li><a href="../services.html">Services &amp; Netzwerk</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h4>Unternehmen</h4>
           <ul>
-            <li><a href="ueber-uns.html">&Uuml;ber uns</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="schadenportal.html">Schadenportal</a></li>
-            <li><a href="herzenspartner.html">Herzenspartner</a></li>
-            <li><a href="index.html#kontakt">Kontakt</a></li>
+            <li><a href="../ueber-uns.html">&Uuml;ber uns</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../schadenportal.html">Schadenportal</a></li>
+            <li><a href="../herzenspartner.html">Herzenspartner</a></li>
+            <li><a href="../index.html#kontakt">Kontakt</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h4>Rechtliches</h4>
           <ul>
-            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="../impressum.html">Impressum</a></li>
             <li><a href="#">Datenschutz</a></li>
             <li><a href="#">AGB</a></li>
           </ul>
