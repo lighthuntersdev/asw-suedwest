@@ -11,6 +11,27 @@ export async function onRequestPost(context) {
     const formData = await request.formData();
     const data = Object.fromEntries(formData.entries());
 
+    const turnstileToken = data['cf-turnstile-response'];
+    if (env.TURNSTILE_SECRET && turnstileToken) {
+      const verifyResponse = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          secret: env.TURNSTILE_SECRET,
+          response: turnstileToken,
+          remoteip: request.headers.get('CF-Connecting-IP'),
+        }),
+      });
+      const verifyResult = await verifyResponse.json();
+      if (!verifyResult.success) {
+        return new Response(
+          JSON.stringify({ success: false, error: 'CAPTCHA-Verifizierung fehlgeschlagen. Bitte versuchen Sie es erneut.' }),
+          { status: 403, headers: { 'Content-Type': 'application/json', ...corsHeaders } }
+        );
+      }
+    }
+    delete data['cf-turnstile-response'];
+
     const typ = data._typ || 'Sachversicherung';
     delete data._typ;
 
