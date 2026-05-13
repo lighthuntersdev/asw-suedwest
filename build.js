@@ -392,8 +392,8 @@ function build() {
 
   console.log(`\nBlog build complete: ${posts.length} blog post(s) generated.`);
 
-  // Build CMS pages from templates + YAML
-  buildPages();
+  // Page templates disabled - pages are manually maintained
+  // buildPages();
 }
 
 build();
