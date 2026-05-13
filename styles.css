@@ -1826,8 +1826,8 @@ nav.nav-scrolled { box-shadow: var(--shadow-sm); }
 }
 
 .service-card--featured h3 { color: white; }
-.service-card--featured p { color: rgba(255,255,255,0.7); }
-.service-card--featured .service-features li { color: rgba(255,255,255,0.8); }
+.service-card--featured p { color: rgba(255,255,255,0.9); }
+.service-card--featured .service-features li { color: rgba(255,255,255,0.9); }
 .service-card--featured .service-features li::before { background: rgba(255,255,255,0.5); }
 .service-card--featured .service-icon svg { stroke: white; }
 .service-card--featured .service-link { color: rgba(255,255,255,0.8); }
