@@ -174,3 +174,4 @@ function buildEmailText(typ, data, checkboxen) {
   text += `\n---\nAutomatisch generiert über das ASW südwest Schadenportal.`;
   return text;
 }
+/* trigger redeploy */
