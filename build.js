@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const yaml = require('js-yaml');
 
 const CONTENT_DIR = path.join(__dirname, 'content', 'blog');
 const OUTPUT_DIR = __dirname;
@@ -247,6 +248,96 @@ function generateBlogCard(post, slug) {
         </a>`;
 }
 
+// ---------------------------------------------------------------------------
+// Page Builder: Templates + YAML -> HTML
+// ---------------------------------------------------------------------------
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function getNestedValue(obj, keyPath) {
+  return keyPath.split('.').reduce(function(current, key) {
+    return current && current[key] !== undefined ? current[key] : undefined;
+  }, obj);
+}
+
+function renderTemplate(template, data) {
+  var result = template;
+
+  // Handle loops: {{#key.subkey}}...{{/key.subkey}}
+  result = result.replace(/\{\{#([a-zA-Z0-9_.]+)\}\}([\s\S]*?)\{\{\/\1\}\}/g, function(match, key, inner) {
+    var items = getNestedValue(data, key);
+    if (!Array.isArray(items)) return '';
+    return items.map(function(item) {
+      if (typeof item === 'string') {
+        return inner.replace(/\{\{\.\}\}/g, escapeHtml(item));
+      }
+      return renderTemplate(inner, item);
+    }).join('\n');
+  });
+
+  // Handle simple variables: {{key}} or {{key.subkey}}
+  result = result.replace(/\{\{([a-zA-Z0-9_.]+)\}\}/g, function(match, key) {
+    var value = getNestedValue(data, key);
+    if (value === undefined || value === null) return match;
+    return escapeHtml(value);
+  });
+
+  return result;
+}
+
+function buildPages() {
+  var TEMPLATES_DIR = path.join(__dirname, 'templates');
+  var PAGES_DIR = path.join(__dirname, 'content', 'pages');
+
+  if (!fs.existsSync(TEMPLATES_DIR)) {
+    console.log('No templates/ directory found, skipping page build.');
+    return;
+  }
+  if (!fs.existsSync(PAGES_DIR)) {
+    console.log('No content/pages/ directory found, skipping page build.');
+    return;
+  }
+
+  var templates = fs.readdirSync(TEMPLATES_DIR).filter(function(f) { return f.endsWith('.html'); });
+
+  if (templates.length === 0) {
+    console.log('No templates found in templates/');
+    return;
+  }
+
+  var builtCount = 0;
+
+  for (var i = 0; i < templates.length; i++) {
+    var templateFile = templates[i];
+    var pageName = templateFile.replace('.html', '');
+    var yamlFile = path.join(PAGES_DIR, pageName + '.yml');
+
+    if (!fs.existsSync(yamlFile)) {
+      console.log('No YAML for template ' + templateFile + ', skipping.');
+      continue;
+    }
+
+    var templateHtml = fs.readFileSync(path.join(TEMPLATES_DIR, templateFile), 'utf-8');
+    var content = yaml.load(fs.readFileSync(yamlFile, 'utf-8'));
+
+    var html = renderTemplate(templateHtml, content);
+
+    fs.writeFileSync(path.join(__dirname, templateFile), html, 'utf-8');
+    console.log('Built page: ' + templateFile);
+    builtCount++;
+  }
+
+  if (builtCount > 0) {
+    console.log('Page build complete: ' + builtCount + ' page(s) generated.');
+  }
+}
+
 function build() {
   if (!fs.existsSync(CONTENT_DIR)) {
     console.log('No content/blog directory found, skipping blog build.');
@@ -299,7 +390,10 @@ function build() {
     }
   }
 
-  console.log(`\nBuild complete: ${posts.length} blog post(s) generated.`);
+  console.log(`\nBlog build complete: ${posts.length} blog post(s) generated.`);
+
+  // Build CMS pages from templates + YAML
+  buildPages();
 }
 
 build();

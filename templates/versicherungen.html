@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Versicherungen für die Wohnungswirtschaft | ASW südwest</title>
-  <meta name="description" content="Umfassende Versicherungslösungen für Wohnungsunternehmen: Gebäudeversicherung, Haftpflicht, D&amp;O, Cyberversicherung und Vertrauensschadenversicherung. Exklusive Rahmenverträge durch VdW/GdW-Partnerschaft.">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
   <meta name="keywords" content="Geb&auml;udeversicherung, D&amp;O Versicherung, Cyberversicherung, Haftpflicht, Wohnungswirtschaft, Rahmenvertr&auml;ge, Vertrauensschadenversicherung">
   <meta name="author" content="ASW s&uuml;dwest GmbH">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1a2b3c">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Versicherungen für die Wohnungswirtschaft | ASW südwest">
-  <meta property="og:description" content="Umfassende Versicherungslösungen für Wohnungsunternehmen: Gebäude, Haftpflicht, D&amp;O, Cyber und mehr. Exklusive Konditionen durch VdW/GdW-Partnerschaft.">
+  <meta property="og:title" content="{{meta.og_title}}">
+  <meta property="og:description" content="{{meta.og_description}}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.asw-suedwest.de/versicherungen.html">
   <meta property="og:locale" content="de_DE">
@@ -20,8 +20,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Versicherungen für die Wohnungswirtschaft | ASW südwest">
-  <meta name="twitter:description" content="Umfassende Versicherungslösungen für Wohnungsunternehmen: Gebäude, Haftpflicht, D&amp;O, Cyber und mehr. Exklusive Konditionen durch VdW/GdW-Partnerschaft.">
+  <meta name="twitter:title" content="{{meta.og_title}}">
+  <meta name="twitter:description" content="{{meta.og_description}}">
 
   <link rel="canonical" href="https://www.asw-suedwest.de/versicherungen.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,12 +118,12 @@
           <span>&rsaquo;</span>
           <span style="color: var(--text-secondary);">Versicherungen</span>
         </div>
-        <span class="hero-badge">Branchenspezifische Lösungen</span>
-        <h1>Versicherungen für die Wohnungswirtschaft</h1>
-        <p class="hero-subtitle">Maßgeschneiderte Versicherungskonzepte für Wohnungsunternehmen, Genossenschaften und Hausverwaltungen -- mit branchenspezifischer Expertise.</p>
+        <span class="hero-badge">{{hero.badge}}</span>
+        <h1>{{hero.title}}</h1>
+        <p class="hero-subtitle">{{hero.subtitle}}</p>
         <div class="hero-actions">
-          <a href="#cyber" class="btn-primary">Unsere Lösungen</a>
-          <a href="index.html#kontakt" class="btn-outline">Beratung anfragen</a>
+          <a href="{{hero.cta_primary.link}}" class="btn-primary">{{hero.cta_primary.text}}</a>
+          <a href="{{hero.cta_secondary.link}}" class="btn-outline">{{hero.cta_secondary.text}}</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -137,34 +137,18 @@
     <div class="container">
       <div class="why-asw-grid">
         <div class="why-asw-content reveal">
-          <span class="section-tag">Cyberversicherung</span>
-          <h2>Cyberversicherung für Ihre digitale Sicherheit</h2>
-          <p>Eine Cyberversicherung schützt Ihr Unternehmen umfassend vor den finanziellen Folgen von Cyberangriffen, Datenverlust und IT-Ausfällen. Sie übernimmt die Kosten für Betriebsunterbrechungen, Datenwiederherstellung sowie IT-Forensik und hilft, Schäden schnell zu begrenzen. Auch Erpressung durch Ransomware, Hackerangriffe, Ansprüche Dritter aus DSGVO-Verstößen können abgesichert werden. Zusätzlich sind Kommunikations-, PR- und Rechtskosten zur Wiederherstellung Ihrer Reputation mitversichert.</p>
+          <span class="section-tag">{{cyberversicherung.tag}}</span>
+          <h2>{{cyberversicherung.title}}</h2>
+          <p>{{cyberversicherung.text}}</p>
           <ul class="why-asw-list">
-            
+            {{#cyberversicherung.points}}
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <strong>Deckung für Haftpflichtansprüche von Dritten</strong>
+                <strong>{{.}}</strong>
               </div>
             </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Eigenschaden-Deckung wie Betriebsunterbrechung o.ä.</strong>
-              </div>
-            </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Krisenmanagement &amp; Forensik</strong>
-              </div>
-            </li>
-            
+            {{/cyberversicherung.points}}
           </ul>
         </div>
         <div class="why-asw-visual reveal">
@@ -182,34 +166,18 @@
           <img src="images/wohnanlage.jpg" alt="Vermögensschadenhaftpflicht für Wohnungsunternehmen" loading="lazy" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
         </div>
         <div class="why-asw-content reveal">
-          <span class="section-tag">Vermögensschadenhaftpflicht</span>
-          <h2>Vermögensschadenhaftpflicht für Ihre Absicherung</h2>
-          <p>Fehler in der Wohnungswirtschaft können schnell zu erheblichen Vermögensschäden führen. Eine Vielzahl an Vorschriften erhöht das Risiko von Haftungsfällen bei Pflichtverletzungen. Eine auf die Branche zugeschnittene Vermögensschaden-Haftpflichtversicherung schützt vor Ansprüchen Dritter und sichert auch Eigenschäden ab.</p>
+          <span class="section-tag">{{vermoegensschadenhaftpflicht.tag}}</span>
+          <h2>{{vermoegensschadenhaftpflicht.title}}</h2>
+          <p>{{vermoegensschadenhaftpflicht.text}}</p>
           <ul class="why-asw-list">
-            
+            {{#vermoegensschadenhaftpflicht.points}}
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <strong>Deckung bei finanziellen Folgen bei Beratungsfehlern</strong>
+                <strong>{{.}}</strong>
               </div>
             </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Absicherung von reinen Vermögensschäden</strong>
-              </div>
-            </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Abwehr von unberechtigten Ansprüchen</strong>
-              </div>
-            </li>
-            
+            {{/vermoegensschadenhaftpflicht.points}}
           </ul>
         </div>
       </div>
@@ -221,34 +189,18 @@
     <div class="container">
       <div class="why-asw-grid">
         <div class="why-asw-content reveal">
-          <span class="section-tag">D&amp;O-Versicherung</span>
-          <h2>D&amp;O-Versicherung für Führungskräfte</h2>
-          <p>Führungskräfte wie Geschäftsführer, Vorstände und Aufsichtsräte haften bei Pflichtverletzungen mit ihrem Privatvermögen. Eine D&amp;O-Versicherung schützt sie gezielt vor solchen persönlichen Haftungsrisiken. Sie ergänzt die Vermögensschaden-Haftpflichtversicherung optimal. Wir unterstützen sie im Schadenfall auf Wunsch mit spezialisierten Anwälten.</p>
+          <span class="section-tag">{{dno_versicherung.tag}}</span>
+          <h2>{{dno_versicherung.title}}</h2>
+          <p>{{dno_versicherung.text}}</p>
           <ul class="why-asw-list">
-            
+            {{#dno_versicherung.points}}
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <strong>Schutz des Privatvermögens von Organmitgliedern</strong>
+                <strong>{{.}}</strong>
               </div>
             </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Schutz bei Ansprüchen wegen Organisationsverschulden</strong>
-              </div>
-            </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Rechtsschutzfunktion bei unberechtigten Ansprüchen</strong>
-              </div>
-            </li>
-            
+            {{/dno_versicherung.points}}
           </ul>
         </div>
         <div class="why-asw-visual reveal">
@@ -266,34 +218,18 @@
           <img src="images/wohnanlage.jpg" alt="Vertrauensschadenversicherung für Unternehmen" loading="lazy" style="width:100%; height:100%; object-fit:cover; aspect-ratio: 4/3; border-radius: var(--radius-xl);">
         </div>
         <div class="why-asw-content reveal">
-          <span class="section-tag">Vertrauensschadenversicherung</span>
-          <h2>Vertrauensschadenversicherung für Ihre Vorsorge</h2>
-          <p>Vertrauensmissbrauch durch Mitarbeiter kann Unternehmen erheblich schädigen und hohe finanzielle Schäden verursachen. Interne Schutzmaßnahmen reichen oft nicht aus, daher ist eine Vertrauensschadenversicherung ein wichtiger Bestandteil betrieblicher Vorsorge. Sie deckt Vermögensschäden ab, die durch vorsätzliche Handlungen wie Diebstahl, Betrug oder Sabotage entstehen. Der Schutz gilt für Schäden durch eigene Mitarbeiter, Dritte oder externe Hackerangriffe.</p>
+          <span class="section-tag">{{vertrauensschadenversicherung.tag}}</span>
+          <h2>{{vertrauensschadenversicherung.title}}</h2>
+          <p>{{vertrauensschadenversicherung.text}}</p>
           <ul class="why-asw-list">
-            
+            {{#vertrauensschadenversicherung.points}}
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <strong>Absicherung bei vorsätzlich unerlaubter Handlung</strong>
+                <strong>{{.}}</strong>
               </div>
             </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Wiederherstellung der finanziellen Stabilität</strong>
-              </div>
-            </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Deckungen bei Fake-Präsident oder Phishing-Angriffen</strong>
-              </div>
-            </li>
-            
+            {{/vertrauensschadenversicherung.points}}
           </ul>
         </div>
       </div>
@@ -305,34 +241,18 @@
     <div class="container">
       <div class="why-asw-grid">
         <div class="why-asw-content reveal">
-          <span class="section-tag">Erw. Strafrechtsschutzversicherung</span>
-          <h2>Erw. Strafrechtsschutzversicherung für Ihren Schutz</h2>
-          <p>Schuldhafte Pflichtverletzungen mit strafrechtlichen Folgen -- etwa bei Umweltverstößen -- können hohe Verteidigungskosten verursachen. Dazu zählen Anwalts- und Gutachterhonorare, die häufig über dem gesetzlichen Gebührenrahmen liegen, sowie Gerichts- und Verwaltungskosten. Eine Strafrechtsschutzversicherung schützt vor diesen finanziellen Belastungen bei strafrechtsrelevanten Tätigkeitsfehlern.</p>
+          <span class="section-tag">{{strafrechtsschutzversicherung.tag}}</span>
+          <h2>{{strafrechtsschutzversicherung.title}}</h2>
+          <p>{{strafrechtsschutzversicherung.text}}</p>
           <ul class="why-asw-list">
-            
+            {{#strafrechtsschutzversicherung.points}}
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
               <div>
-                <strong>Umfassender Schutz bei strafrechtlichen Ermittlungen</strong>
+                <strong>{{.}}</strong>
               </div>
             </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Kostentragung von Gutachten und Nebenleistungen</strong>
-              </div>
-            </li>
-            
-
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><polyline points="20 6 9 17 4 12"/></svg>
-              <div>
-                <strong>Minimierung von Reputationsschäden</strong>
-              </div>
-            </li>
-            
+            {{/strafrechtsschutzversicherung.points}}
           </ul>
         </div>
         <div class="why-asw-visual reveal">
@@ -346,15 +266,15 @@
   <section class="cta-section" id="kontakt">
     <div class="container">
       <div class="cta-content reveal">
-        <h2>Lassen Sie Ihren Versicherungsschutz prüfen</h2>
-        <p>Wir analysieren Ihre bestehenden Policen und zeigen Ihnen Optimierungspotenziale -- kostenfrei und unverbindlich. Profitieren Sie von unseren exklusiven Rahmenverträgen.</p>
+        <h2>{{cta.title}}</h2>
+        <p>{{cta.text}}</p>
         <div class="cta-actions">
-          <a href="mailto:info@asw-suedwest.de" class="btn-white">
+          <a href="{{cta.cta_link}}" class="btn-white">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
-            Beratung anfragen
+            {{cta.cta_text}}
           </a>
         </div>
-        <p class="cta-note">Kostenlos &amp; unverbindlich.</p>
+        <p class="cta-note">{{cta.note}}</p>
       </div>
     </div>
   </section>
