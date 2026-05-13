@@ -42,11 +42,37 @@ export async function onRequestPost(context) {
       }
     }
 
+    const attachments = [];
+    const files = formData.getAll('dokumente');
+    for (const file of files) {
+      if (file && file.size && file.size > 0) {
+        const buffer = await file.arrayBuffer();
+        const base64 = btoa(String.fromCharCode(...new Uint8Array(buffer)));
+        attachments.push({
+          filename: file.name,
+          content: base64,
+        });
+      }
+    }
+    delete data.dokumente;
+
     let betreff = `Neue Schadensmeldung: ${typ}`;
     let htmlBody = buildEmailHtml(typ, data, checkboxFelder);
     let textBody = buildEmailText(typ, data, checkboxFelder);
 
     const empfaenger = env.SCHADEN_EMAIL || 'info@asw-suedwest.de';
+
+    const emailPayload = {
+      from: env.RESEND_FROM || 'ASW Schadenportal <noreply@asw-suedwest.de>',
+      to: [empfaenger],
+      subject: betreff,
+      html: htmlBody,
+      text: textBody,
+    };
+
+    if (attachments.length > 0) {
+      emailPayload.attachments = attachments;
+    }
 
     const resendResponse = await fetch('https://api.resend.com/emails', {
       method: 'POST',
@@ -54,13 +80,7 @@ export async function onRequestPost(context) {
         'Authorization': `Bearer ${env.RESEND_API_KEY}`,
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        from: env.RESEND_FROM || 'ASW Schadenportal <noreply@asw-suedwest.de>',
-        to: [empfaenger],
-        subject: betreff,
-        html: htmlBody,
-        text: textBody,
-      }),
+      body: JSON.stringify(emailPayload),
     });
 
     if (!resendResponse.ok) {
