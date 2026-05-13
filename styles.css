@@ -993,11 +993,14 @@ section { padding: 100px 5%; }
 }
 
 .blog-article-img {
-  margin: 0;
-  width: 100%;
+  max-width: var(--container-width, 1200px);
+  margin: 0 auto;
+  padding: 0 5%;
   overflow: hidden;
-  aspect-ratio: 2.5/1;
+  border-radius: var(--radius-xl);
+  aspect-ratio: 2/1;
   background: var(--gray-100);
+  box-sizing: border-box;
 }
 
 .blog-article-body {
