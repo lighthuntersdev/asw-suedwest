@@ -67,7 +67,7 @@ function generateBlogPost(post, slug) {
   const { frontmatter: fm, body } = post;
   const articleHtml = mdToHtml(body);
   const dateFormatted = formatDate(fm.date);
-  const imgSrc = '../' + (fm.image || 'images/hero-building.jpg');
+  const imgSrc = '../' + (fm.image || 'images/hero-building.webp');
   const imgAlt = fm.image_alt || fm.title;
 
   return `<!DOCTYPE html>
@@ -227,7 +227,7 @@ function generateBlogPost(post, slug) {
 function generateBlogCard(post, slug) {
   const { frontmatter: fm } = post;
   const dateFormatted = formatDate(fm.date);
-  const imgSrc = fm.image || 'images/hero-building.jpg';
+  const imgSrc = fm.image || 'images/hero-building.webp';
   const imgAlt = fm.image_alt || fm.title;
 
   return `

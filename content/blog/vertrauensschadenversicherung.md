@@ -4,7 +4,7 @@ date: 2026-01-03
 category: Versicherungswissen
 readtime: "5 Min. Lesezeit"
 description: "Unterschlagung, Veruntreuung und Social Engineering gehören zu den häufigsten, aber am wenigsten beachteten Risiken in der Wohnungswirtschaft. Eine Vertrauensschadenversicherung schützt Ihr Unternehmen vor den finanziellen Folgen krimineller Handlungen durch Mitarbeiter und externe Täuschungsmanöver."
-image: images/team-meeting.jpg
+image: images/team-meeting.webp
 image_alt: "Teammeeting in der Wohnungswirtschaft – Vertrauensschadenversicherung"
 ---
 

@@ -4,7 +4,7 @@ date: 2026-02-10
 category: D&O
 readtime: "4 Min. Lesezeit"
 description: "Vorstände und Geschäftsführer von Wohnungsunternehmen haften bei Pflichtverletzungen persönlich mit ihrem Privatvermögen. Eine D&O-Versicherung schützt Führungskräfte vor existenzbedrohenden Schadensersatzforderungen und sichert die unternehmerische Handlungsfähigkeit."
-image: images/blog-do.jpg
+image: images/blog-do.webp
 image_alt: "D&O-Versicherung – Vorstandssitzung in der Wohnungswirtschaft"
 ---
 

@@ -4,7 +4,7 @@ date: 2026-03-15
 category: Cyberrisiken
 readtime: "5 Min. Lesezeit"
 description: "Die Digitalisierung der Wohnungswirtschaft schreitet rasant voran — und mit ihr wachsen die Cyberrisiken. Wir zeigen Ihnen, welche Mindestanforderungen Versicherer 2026 stellen und wie Sie Ihr Wohnungsunternehmen umfassend absichern."
-image: images/blog-cyber.jpg
+image: images/blog-cyber.webp
 image_alt: "Cybersicherheit in der Wohnungswirtschaft"
 ---
 

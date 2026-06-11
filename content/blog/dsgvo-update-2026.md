@@ -4,7 +4,7 @@ date: 2026-01-25
 category: Datenschutz
 readtime: "6 Min. Lesezeit"
 description: "Die europäische Datenschutz-Grundverordnung wird 2026 durch wichtige Ergänzungen erweitert. Für Hausverwaltungen und Wohnungsunternehmen ergeben sich daraus konkrete neue Pflichten bei der Verarbeitung von Mieterdaten. Wir erklären, was sich ändert und wie Sie sich vorbereiten."
-image: images/wohnanlage.jpg
+image: images/wohnanlage.webp
 image_alt: "Wohnanlage mit moderner Hausverwaltung"
 ---
 

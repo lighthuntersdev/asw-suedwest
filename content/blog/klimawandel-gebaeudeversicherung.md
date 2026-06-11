@@ -4,7 +4,7 @@ date: 2026-01-12
 category: Gebäudeschutz
 readtime: "8 Min. Lesezeit"
 description: "Starkregen, Überschwemmungen und Extremwetterereignisse nehmen in Deutschland messbar zu. Für Wohnungsunternehmen und Hausverwaltungen bedeutet das: Der bisherige Versicherungsschutz reicht oft nicht mehr aus. Wir zeigen, welche Risiken der Klimawandel mit sich bringt und wie Sie Ihren Gebäudebestand richtig absichern."
-image: images/hero-building.jpg
+image: images/hero-building.webp
 image_alt: "Gebäude mit Klimarisiken – Versicherungsschutz anpassen"
 ---
 

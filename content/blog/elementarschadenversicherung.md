@@ -4,7 +4,7 @@ date: 2026-02-28
 category: Gebäudeschutz
 readtime: "7 Min. Lesezeit"
 description: "Hochwasser, Starkregen, Erdrutsch: Die Häufigkeit und Intensität von Naturereignissen nimmt zu. Für Wohnungsunternehmen und Hausverwaltungen stellt sich zunehmend die Frage, ob eine Elementarschadenversicherung noch optional ist oder zur betrieblichen Notwendigkeit geworden ist."
-image: images/blog-elementar.jpg
+image: images/blog-elementar.webp
 image_alt: "Elementarschäden – Hochwasser an Gebäude"
 ---
 

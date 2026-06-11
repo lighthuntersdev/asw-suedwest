@@ -4,7 +4,7 @@ date: 2026-05-10
 category: Gebäudeschutz
 readtime: "6 Min. Lesezeit"
 description: "Starkregen, Überschwemmungen und Hagel nehmen zu. Erfahren Sie, wie Sie Ihre Wohnungsbestände mit einer Elementarschadenversicherung optimal schützen."
-image: images/blog-elementar.jpg
+image: images/blog-elementar.webp
 image_alt: "Hochwasserschäden an Gebäude"
 ---
 
