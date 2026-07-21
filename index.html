@@ -199,23 +199,22 @@
 
   <!-- ========== HERO ========== -->
   <div id="main-content"></div>
-  <header class="hero" id="hero" style="position: relative;">
-    <div class="container">
-      <div class="hero-content">
-        <span class="hero-badge">Seit 1999 Partner der Wohnungswirtschaft</span>
-        <h1>Wohnungswirtschaft ist unsere <em>Leidenschaft</em></h1>
-        <p class="hero-subtitle">Sicherheit für die Wohnungswirtschaft – maßgeschneidert und partnerschaftlich. Als spezialisierter Versicherungsmakler bieten wir Ihnen individuelle Versicherungslösungen, die exakt auf ihre Bedürfnisse zugeschnitten sind.</p>
-        <div class="hero-actions">
-          <a href="risikoanalyse.html" class="btn btn-primary">Kostenlose Risikoanalyse</a>
-          <a href="#leistungen" class="btn btn-outline">Leistungen entdecken</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <img src="images/hero-building.webp" alt="ASW südwest – Modernes Bürogebäude" loading="eager" style="width:100%; height:100%; object-fit:cover; border-radius: 24px;">
+  <header class="hero hero--fullscreen" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-building.webp" alt="" loading="eager">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container" style="position: relative; z-index: 2; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 90vh; padding: 160px 5% 120px;">
+      <span class="hero-badge" style="margin-bottom: 24px;">Seit 1999 Partner der Wohnungswirtschaft</span>
+      <h1 style="color: white; font-size: clamp(2.8rem, 6vw, 4.5rem); line-height: 1.08; margin-bottom: 24px; max-width: 800px;">Wohnungswirtschaft ist unsere <em>Leidenschaft</em></h1>
+      <p class="hero-subtitle" style="color: rgba(255,255,255,0.8); max-width: 640px; margin: 0 auto 36px; font-size: 1.15rem; line-height: 1.75;">Sicherheit f&uuml;r die Wohnungswirtschaft &ndash; ma&szlig;geschneidert und partnerschaftlich. Als spezialisierter Versicherungsmakler bieten wir Ihnen individuelle Versicherungsl&ouml;sungen, die exakt auf ihre Bed&uuml;rfnisse zugeschnitten sind.</p>
+      <div class="hero-actions" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="risikoanalyse.html" class="btn btn-primary">Kostenlose Risikoanalyse</a>
+        <a href="#leistungen" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.4);">Leistungen entdecken</a>
       </div>
     </div>
     <div style="position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); text-align: center; z-index: 3;">
-      <a href="#leistungen" style="color: var(--text-muted); text-decoration: none; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0.6; transition: opacity 0.3s;">
+      <a href="#leistungen" style="color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; gap: 8px; transition: opacity 0.3s;">
         <span>Entdecken</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="animation: scrollBounce 2s infinite;"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
       </a>
