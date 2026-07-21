@@ -3097,3 +3097,68 @@ footer {
     padding: 120px 5% 80px !important;
   }
 }
+
+/* ===== SUBPAGE HERO ===== */
+.hero--sub {
+  min-height: auto;
+  padding: 160px 5% 80px;
+  text-align: center;
+}
+
+.hero--sub .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.hero--sub h1 {
+  color: white;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero--sub h1 em {
+  color: var(--accent);
+}
+
+.hero--sub .hero-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 640px;
+  text-align: center;
+  margin: 0 auto 32px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hero--sub .hero-badge {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+}
+
+.hero--sub .hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero--sub .btn-outline {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero--sub .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .hero--sub {
+    padding: 120px 5% 60px;
+  }
+}
